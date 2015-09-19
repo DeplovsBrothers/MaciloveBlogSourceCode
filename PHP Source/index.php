@@ -415,30 +415,11 @@ if($max_readMore!=0)
 <script type="text/javascript" src="http://macilove.com/resources/jquery-2.1.0.min.js"></script>
 <title>Новости Apple для настоящих фанатов — Macilove</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<!-- <meta name="apple-itunes-app" content="app-id= 732986215"> -->
-<!-- <meta name="viewport" content="width=1140" /> -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" href="http://macilove.com/resources/favicon.ico" />
 
 <link rel="apple-touch-icon-precomposed" href="http://macilove.com/resources/apple-touch-icon-114x114.png">
 <link rel="alternate" type="application/rss+xml" href="http://macilove.com/rss/" />
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-8052564-20']);
-  _gaq.push(['_trackPageview']);
-  
-  setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])", 15000);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
 
 <title><?php echo $title; ?></title>
 <meta property="og:title" content="Новости Apple для настоящих фанатов"/>
@@ -487,18 +468,10 @@ $(window).load(function() {
 
 	var asideHeight = 40+$('aside').height() - $(window).height();
 	var flag = false;
-/*
-	console.log("h: "+(40+$('aside').height()));
-	console.log("ass: " +asideHeight);
-	console.log("br: "+$(window).height());//653
-*/
-	
 	$(window).scroll(function(){
 		
 		if(asideHeight <= $(window).scrollTop() && !flag)
 		{
-/* 			console.log($(window).scrollTop()); */
-
 			$('aside').css('position','fixed');
 			$('aside').css('bottom', '-10px');
 			
@@ -511,9 +484,6 @@ $(window).load(function() {
 		}
 	});	
 	
-	
-
-	//_roost.prompt();
 	
 });
 
@@ -555,72 +525,6 @@ $(window).scroll(function()
 	}
 });
 </script>
-<script>
-    var _roost = _roost || [];
-    _roost.push(['appkey','4c81eda8d1c6482b80fc49459d4c2a33']);
-
-    !function(d,s,id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if(!d.getElementById(id)){
-            js=d.createElement(s); js.id=id;
-            js.src='//cdn.goroost.com/js/roost.js';
-            fjs.parentNode.insertBefore(js,fjs);
-        }
-    }(document, 'script', 'roost-js');
-
-
-</script>
-<style type="text/css">
-#fresh-reversi-banner{
-	width: 100%;
-	background: hsl(58, 100%, 51%);
-	border-bottom: 1px solid #ebebeb;
-	display: block;
-	color: #212417;
-	text-decoration: none;
-	font-family: "SF UI Display", "Helvetica Neue", Arial, sans-serif;
-	z-index: 100;
-	text-align: center;
-	line-height: 140%;
-	padding: 10px 0;
-	box-sizing: border-box;
-	margin-bottom: 20px;
-}
-#fresh-reversi-banner #grey{
-	color: #999;
-	display: none;
-}
-#revers-wrapper{
-	max-width: 980px;
-	text-align: left;
-	display: inline-block;
-}
-#fresh-reversi-banner h1{
-	font-size: 16px;
-	line-height: 140%;
-}
-#fresh-reversi-banner h2{
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 140%;
-}
-#fresh-reversi-banner h3{
-	font-size: 14px;
-	color: black;
-	line-height: 140%;
-}
-#fresh-icon{
-	width: 80px;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 10px;
-}
-#fresh-title{
-	display: inline-block;
-	vertical-align: middle;
-}
-
-</style>
 </head>
 <body>
 	
@@ -637,7 +541,6 @@ $(window).scroll(function()
 	<ul>
 		<li><a href="http://macilove.com/best-mac-os-x-apps/">Best Apps</a></li>
 		<li><a href="http://macilove.com/os-x-wallpapers/">Обои</a></li>
-<!-- 		<li><a href="http://macilove.com/russian-xcode-tutorials/">Xcode уроки</a></li> -->
 		<li><a href="http://macilove.com/books/">Книги</a></li>
 	</ul>
 	<footer>
@@ -651,58 +554,11 @@ $(window).scroll(function()
 </nav>
 
 <article>
-<!--
-	<a href="https://itunes.apple.com/ru/app/fresh-reversi-othello-like/id732986215?mt=8" id="fresh-reversi-banner" target="_blank" rel="nofollow" width="260" onClick="_gaq.push(['_trackEvent', 'PleeqSoftware', 'Macilove', 'Fresh Reversi - Index Page, Top']);">
-	<div id="revers-wrapper">
-		<img id="fresh-icon" src="http://pleeq.com/fresh-reversi/fresh-reversi-140px.png">
-		
-		<div id="fresh-title">
-			<h1>Fresh Reversi</h1>
-			<h2>iOS игра для развития логики</h2>
-			<h3>Скачать в App Store <span id="grey">(119 р.)</span></h3>
-		</div>
-	</div>
-</a>
--->
 
 	<?php echo $categoryHeader; ?>
 
 	<section id="latest">
 		<?php echo $latestArticle; ?>
-	</section>
-	<section class="yandex-index-flow ya-candy">
-<!-- Яндекс.Директ -->
-<div id="yandex_ad"></div>
-<script type="text/javascript">
-(function(w, d, n, s, t) {
-    w[n] = w[n] || [];
-    w[n].push(function() {
-        Ya.Direct.insertInto(113966, "yandex_ad", {
-            stat_id: 1,
-            ad_format: "direct",
-            font_size: 0.9,
-            font_family: "arial",
-            type: "horizontal",
-            limit: 1,
-            title_font_size: 1,
-            links_underline: false,
-            site_bg_color: "FFFFFF",
-            title_color: "0000CC",
-            url_color: "5A7321",
-            text_color: "444444",
-            hover_color: "0088CC",
-            sitelinks_color: "0000CC",
-            no_sitelinks: false
-        });
-    });
-    t = d.getElementsByTagName("script")[0];
-    s = d.createElement("script");
-    s.src = "//an.yandex.ru/system/context.js";
-    s.type = "text/javascript";
-    s.async = true;
-    t.parentNode.insertBefore(s, t);
-})(window, document, "yandex_context_callbacks");
-</script>
 	</section>
 	<section id="news">
 		<ul>
@@ -723,53 +579,16 @@ $(window).scroll(function()
 			<input type="hidden" name="sitesearch" value="macilove.com" />
 			</form>
 		</li>
-<!--
-		<li class="aside-1">		
-			<div>
-				<a href="https://itunes.apple.com/ru/app/anchor-pointer-gps-compass/id791684332?mt=8" id="promo-app-ap" target="_blank" rel="nofollow" width="260" onClick="_gaq.push(['_trackEvent', 'PleeqSoftware', 'click', 'Anchor Pointer - Index Page, Top']);"></a>
-			</div>
-		</li>
--->
 		<li class="aside-1">
 			<h3>Популярное сегодня</h3>
 			<?php echo $popularDay; ?>
 		</li>
-	<li class="aside-1">
-	<!-- Яндекс.Директ -->
-<script type="text/javascript">
-yandex_partner_id = 113966;
-yandex_site_bg_color = 'FFFFFF';
-yandex_stat_id = 14;
-yandex_ad_format = 'direct';
-yandex_direct_type = 'posterVertical';
-yandex_direct_limit = 1;
-yandex_direct_title_font_size = 3;
-yandex_direct_links_underline = false;
-yandex_direct_title_color = '3C5160';
-yandex_direct_url_color = '006600';
-yandex_direct_text_color = '000000';
-yandex_direct_hover_color = '0066FF';
-yandex_direct_sitelinks_color = '5A7321';
-yandex_direct_favicon = false;
-yandex_no_sitelinks = false;
-document.write('<scr'+'ipt type="text/javascript" src="//an.yandex.ru/system/context.js"></scr'+'ipt>');
-</script>
-</li>
-
 		<li class="aside-text">
 			<h3>Популярное за неделю</h3>
 			<ul>
 				<?php echo $popularWeek; ?> 
 			</ul>
 		</li>
-<!--
-		<li class="aside-1">
-			<h3>Рекомендуем установить</h3>
-			<div>
-				<a href="https://itunes.apple.com/ru/app/fresh-reversi-othello-like/id732986215?mt=8" id="promo-app" target="_blank" rel="nofollow" width="260" onClick="_gaq.push(['_trackEvent', 'PleeqSoftware', 'click', 'Fresh Reversi - Index Page, Bottom']);"></a>
-			</div>
-		</li>
--->
 		<li class="aside-2">
 			<h3>Сейчас читают</h3>
 			<?php echo $readNow[1]; ?>
