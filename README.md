@@ -40,3 +40,13 @@ Article always have main "front" image you can see
 When you done, save your text (Save button). And when you ready to publish new article push publish button.
 From this moment article will be available in the index / content file. 
 
+# Index and content files
+index.php in root folder
+content.php in the news folder
+
+Index is a list of all articles (first screenshot). You can use it as is, or you can delete all code that related to "old" database.
+You also need to add your database name and ect. 
+Same thing with content.php
+Check all paths and it's permissions twice, I thinks this could be the most trouble.
+
+
