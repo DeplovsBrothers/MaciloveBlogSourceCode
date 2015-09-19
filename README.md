@@ -7,7 +7,7 @@ For any other information contact us at <a href="http://pleeq.com" target="_blan
 Note: files that we provide have much more functions that described it all been used in our macilove.com, but right now we haven't time to describe them all. Maybe in the future we'll add more commentaries. 
 Right now we'll focus on editor and content page.
 
-# What features editor have:
+# What features editor have
 * Realtime preview
 * Autosave
 * Formatting tags (they was made like stackoverflow.com formating tags)
