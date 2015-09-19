@@ -106,8 +106,6 @@ header("Location: ../");
 				$body = str_replace($inBodyLinks[0][$n], '<a href="http://'.trim($inBodyLinkURLs[1]).'" onClick="_gaq.push([\'_trackEvent\', \'Madrobots\', \'click\', \''.$title.'\']);">'.$inBodyLinks[2][$n].'</a>', $body);
 				
 				
-			//$body = preg_replace('/([^@]\[(.+?)\]\[([0-9]+)\])/',' <a href="http://'.$inBodyLinkURLs[1].'">'.$inBodyLinks[2][$n].'</a>' , $body,1);
-				
 				
 			$body = preg_replace('/\['.$inBodyLinks[3][$n].'\] https?:\/\/(.+)(\R)?/', '', $body,1);
 			
@@ -115,11 +113,6 @@ header("Location: ../");
 		$body = trim($body);
 		
 		
-	//	preg_match('/^((.+)\R){1}/', $body,$test);
-		
-	//	print_r($test);
-		
-//	/(?:(\r|\r?\n){2})/	
 
 		
 		
@@ -186,8 +179,6 @@ header("Location: ../");
 				
 				
 			
-				//$body = str_replace('<p>'.$inBodyImage[0][$n].'</p>', $imageReplace, $body);
-				
 
 					$body = preg_replace('/<p>@\[([0-9]+)\]\[([0-9]+)\]\[(.*?)\](<\/p>)?/', $imageReplace, $body,1);
 
@@ -199,124 +190,6 @@ header("Location: ../");
 		}
  
 		$body = preg_replace('/(?<!<p>[ *])(\r?\n|\r|\n){1,}/', '<br />', $body);
-		
-		
-		
-
-	
-		
-		
-/////////////////////////		
-		
-//		$body = preg_replace('/<p>[ *]<br \/>/', '', $body);		
-		//remove extra p
-		/* $body = preg_replace('/(<p>)((\s|&nbsp;|<\/?\s?br\s?\/?>)*)<\/p>/', '', $body); */
-		
-		
-		
-		
-
-		
-/*	
-		$body = preg_replace('/[^\:]###(.+)/', '</p><h3>$1</h3><p>', $body);
-		$body = preg_replace('/[^\:]##(.+)/', '</p><h2>$1</h2><p>', $body);
-		$body = preg_replace('/[^\:]#(.+)/', '</p><h1>$1</h1><p>', $body);
-		
-		
-		//list
-		
-		$body = preg_replace_callback('/\[(ul|ol)\]((\r\n|\n|\r)?)(.+)\[\/(ul|ol)\]/s', create_function('$matches', '$matches[4] = preg_replace("/(.+)/","<li>$1</li>",$matches[4]);
-		$matches[4] = preg_replace("/(\r\n|\n|\r)/","",$matches[4]);
-		return "</p><".$matches[1].">".$matches[4]."</".$matches[1]."><p>";'), $body);
-		
-		
-		
-				
-		$body = preg_replace('/^((.+)\R){1}/', '<p>$1', $body);
-		
-
-		
-		// IMG
-		preg_match_all('/@\[(.+)\]\[(.+)\]\[(.*)\]/', $body, $inBodyImage);
-			
-		//there is some imgs
-		if($inBodyImage[2])
-		{
-			$inBodyImageIndexes = $inBodyImage[2];
-		
-		
-		
-			for($n=0;!empty($inBodyImageIndexes[$n]);$n++)
-			{	
-				$index = $inBodyImageIndexes[$n];
-				
-				//$imageURLWithoutFileType = './images/'.$url.'-'.$index;
-				$imageURLWithoutFileType = './../img/articles/'.$url.'-'.$index;
-				 
-				
-			//	echo $imageURLWithoutFileType.'.jpg';
-			//	echo '<img src="'.$imageURLWithoutFileType.'.jpg">';
-			//	echo "<br />";
-			//	echo $index;
-			//	echo $inBodyImage[0][$n];
-				 
-								
-				//echo $inBodyImage[0][$n];
-				
-				if(file_exists($imageURLWithoutFileType.'.jpg'))
-				{
-					$body = preg_replace('/@\[(.+)\]\[(.+)\]\[(.*)\]/', '</p><img src="'.$imageURLWithoutFileType.'.jpg">', $body,1);
-				}
-				else if(file_exists($imageURLWithoutFileType.'.gif'))
-				{
-					$body = preg_replace($inBodyImage[0][$n], '</p><img src="'.$imageURLWithoutFileType.'.gif">', $body,1);
-	
-				}
-				
-			}
-			
-		}
-	
-				
-		
-		// link
-		preg_match_all('/([^@]\[(.+?)\]\[([0-9]+)\])/', $body, $inBodyLinks);
-		
-		for($n=0;!empty($inBodyLinks[2][$n]);$n++)
-		{
-	
-			preg_match('/\['.$inBodyLinks[3][$n].'\] http:\/\/(.+)(\R)?/', $body, $inBodyLinkURLs);
-		
-			$body = preg_replace('/([^@]\[(.+?)\]\[([0-9]+)\])/', ' <a href="http://'.$inBodyLinkURLs[1].'">'.$inBodyLinks[2][$n].'</a>', $body,1);
-				
-				
-			$body = preg_replace('/\['.$inBodyLinks[3][$n].'\] http:\/\/(.+)(\R)?/', '', $body,1);
-				
-		}
-	
-		//bold-strong
-		
-	*/
-	//	$body = preg_replace('/\*\*(.+?)\*\*/', '<strong>$1</strong>', $body);
-	/*	
-		//2 новых строки
-		$body = preg_replace('/(.+)[\n]{2,}/', '$1</p><p>', $body);
-	
-		
-	
-		//1 новая строка
-		$body = preg_replace('/(.+)\n^(<\/p>)/', '$1<br \/>', $body);	
-	
-	
-		//remove extra p
-		$body = preg_replace('/<p>((\s|&nbsp;|<\/?\s?br\s?\/?>)*)<\/p>/', '', $body);
-		
-		
-		$body = preg_replace('/<p[^>]*><\\/p[^>]*>/', '', $body);
-
-	
-	
-*/		
 	}
 
 
@@ -948,7 +821,6 @@ $(window).scroll(function()
 	<ul>
 		<li><a href="http://macilove.com/best-mac-os-x-apps/">Best Apps</a></li>
 		<li><a href="http://macilove.com/os-x-wallpapers/">Обои</a></li>
-<!-- 		<li><a href="http://macilove.com/russian-xcode-tutorials/">Xcode уроки</a></li> -->
 		<li><a href="http://macilove.com/books/">Книги</a></li>
 	</ul>
 	<footer>
