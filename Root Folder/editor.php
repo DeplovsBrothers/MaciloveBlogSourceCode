@@ -1210,7 +1210,7 @@ $('#saveChanges').click(function(){
 	<div id="editor-left">
 		<div id="top-toolbar"><form action="" name="publishForm" method="post"><input name="publish" type="submit" value="Publish"><a href="http://macilove.com/news/<?php echo $url; ?>/">Preview</a>  <a href="http://macilove.com">Macilove</a></form><form method="post" action="" name="editorForm" enctype='multipart/form-data'>
 		<br />
-		Main: <input type="file" name="mainImage" id="mainImage"><br />
+		Main image (560x290px): <input type="file" name="mainImage" id="mainImage"><br />
 		<select name="categories" style="float:left; clear:left; font-size:12px;">
 	      <option selected="selected" value="0" <?php echo $categories0; ?>>Apple Apple</option>
 	      <option value="13" <?php echo $categories13; ?>>Apple accessories reviews </option>
