@@ -1,0 +1,703 @@
+
+/*
+
+body{
+	background-color: #25262c;
+	font-family: Arial, 'Lato', Helvetica, Arial, sans-serif;
+	margin: 0;
+	background-color: hsl(231, 9%, 14.3%);
+}
+
+#projects{
+	text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.quick-link-app-store{
+	color: #8c8e9b !important;
+	font-size: 13px;
+	margin-top: 20px;
+	line-height: 15px;
+	display: inline-block;
+	border: 1px solid hsl(231, 5%, 26%);
+	padding: 4px 15px;
+	opacity: 0;
+	-webkit-transition: opacity .3s;
+	border-radius: 2px;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+#projects h2{
+	margin: 20px 0 10px;
+	font-weight: 400;
+	color: white;
+	font-size: 27px;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 2px 0 rgba(0,0,0,.55);
+	-webkit-animation: fadein-slogan 2s;
+}
+
+
+.subtitle{
+	color: #8c8e9b;
+	font-size: 14px;
+	-webkit-animation: fadein-slogan 2s;
+	color: hsl(231, 5%, 46%);
+}
+
+
+
+#projects a{
+	color: white;
+	text-decoration: none;
+}
+
+
+.folder{
+	width: 230px;
+	height: 230px;
+	border-radius: 45px;
+	display: inline-block;
+	box-shadow: 0 0px 1px 2px rgba(0,0,0,.2), 0 3px 3px -2px rgba(255,255,255,.5) inset, 0 0 1px 1px rgba(255,255,255,.1) inset;
+	-webkit-transition: all .3s;
+	position: relative;
+	background-size: contain;
+	text-align: center;
+	
+}
+
+#projects a.folder{
+	-webkit-transition: all .3s ease;
+	top:0;
+	position: relative;
+	-webkit-animation: animToDown .3s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#projects a.folder:hover{
+	position: relative;
+	-webkit-animation: animToTop .3s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-transition: box-shadow .3s;
+}
+
+.fresh-reversi{
+	background-image: url(http://pleeq.com/resources/fresh-reversi-icon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.folder-box{
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	min-width: 250px;
+	max-width: 340px;
+	text-align: center;
+	background: yellow;
+}
+
+
+/*
+@media screen and (max-device-width: 480px){
+
+	body{
+		-webkit-text-size-adjust:none;
+	}
+
+	#web .desctiption{
+		font-size: 240% !important;	
+		width: 65% !important;
+	}
+
+	#web tbody tr td, header p{
+		font-size: 200% !important;	
+	}
+		
+	#web tbody tr:first-child{
+		font-size: 100% !important;	
+	}
+	
+	#web tbody td:first-child{
+		font-size: 200% !important;	
+		font-weight: bold;
+	}
+	
+	#web tbody td:last-child{
+		display: none !important;	
+	}
+	
+	footer{
+		display: none !important;
+	}
+	
+}
+
+#dark-bg{
+	background-color: rgba(0,0,0,.1);
+	background-color: hsl(231, 9%, 14.3%);
+	box-shadow: 0 2px 2px rgba(0,0,0,.2) inset;
+	-webkit-animation: fadein-footer 3s;
+}
+
+nav{
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+nav #active{
+	font-weight: bold;
+	color: white;
+}
+
+nav span{
+	width: 1150px;
+	margin: 0 auto;
+	display: block;
+}
+
+nav a{
+	color: hsl(231, 5%, 46%);
+	font-size: 13px;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+nav a:hover{
+	color: white;
+}
+
+@-webkit-keyframes fadein-projects {
+    0% { opacity: 0; margin-top: -180px; border-color: transparent; background-color: transparent; }
+    50% { opacity: 1; margin-top: -180px; border-color: transparent; background-color: transparent;}
+    100% { margin-top: 0px; border-color: inherit; background-color: inherit;}
+}
+
+@-webkit-keyframes fadein-logo {
+    0% { opacity: 0; }
+    50% {opacity: 0;}
+    100%   { opacity: 1; }
+}
+
+@-webkit-keyframes header-border{
+	0%{border-color: transparent; background-color: transparent; }
+	70%{border-color: transparent; background-color: transparent; }
+	100%{border-color: inherit; background-color: inherit; }
+}
+
+@-webkit-keyframes fadein-slogan {
+    0% { opacity: 0;}
+    70% {opacity: 0;}
+    100%   { opacity: 1;}
+}
+
+@-webkit-keyframes fadein-footer {
+    0% { opacity: 0; }
+    80% {opacity: 0;}
+    100%   { opacity: 1; }
+}
+
+
+header{
+	text-align: center;
+	margin: 0;
+	padding: 80px 0 30px;
+	border-bottom: 1px solid rgba(255,255,255,.05);
+	-webkit-animation: header-border 2s;
+	background-color: #25262c;
+	z-index: 2;
+}
+
+header h1{
+	margin: 0;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+
+header h1 a{
+	color: white;
+	text-decoration: none;
+	font-size: 32px;
+	-webkit-animation: fadein-logo 2s;
+}
+
+header p{
+	margin: 0;
+	text-align: center;
+	font-size: 18px;
+	line-height: 150%;
+	margin-top: 10px;
+	-webkit-animation: fadein-slogan 2s;
+	box-sizing: border-box;
+	color: hsl(231, 5%, 46%);
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+
+#news{
+	width: 530px;
+	color: white;
+	display: block;
+	margin: 80px auto;
+	font-size: 18px;
+	-webkit-animation: fadein-footer 3s;
+}
+
+#news-wrapper{
+	width: 100%;
+	-webkit-animation: fadein-footer 3s;
+}
+
+#news h3, #subscribe h3{
+	display: block;
+	padding-left: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	color: #494b56;
+}
+
+::-webkit-input-placeholder, :-moz-placeholder{
+   color: hsl(231, 5%, 46%);
+}
+
+
+#subscribe{
+	text-align: center;	
+	display: block;
+	border-radius: 8px;
+	-webkit-animation: fadein-footer 3s;
+	padding: 60px 0;
+}
+
+#subscribe input:first-child, #subscribe input:nth-child(2){
+	background-color: transparent;
+	border-bottom: 1px solid #b5b5b9;
+	-webkit-appearance: none;	
+	display: inline-block;
+	width: 160px;
+	font-size: 16px;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #444755;
+	-webkit-appearance: none;
+	margin: 0;
+	padding: 12px 0;
+	border-radius: 0;
+	color: white;
+	resize: none;
+	margin-right: 10px;
+}
+
+#subscribe input:nth-child(2){
+	width: 240px;
+}
+
+#success{
+	color: #99cf41 !important;
+	display: none;
+	position: absolute;
+	width: 100%;
+	line-height: 20px;
+	font-size: 16px;
+}
+
+#subscribe input:last-child{
+	display: inline-block;
+	max-width: 227px;
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: bold;
+	color: #fff;
+	background: #0578ff;
+	border: 0;
+	margin: 0 auto;
+	padding: 10px 20px;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+#subscribe input:last-child:active{
+	background: #0067db;
+}
+
+#subscribe input:focus{
+	outline:0;
+	color: white;
+}
+
+#subscribe h3{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin-bottom: 40px;
+	font-size: 32px;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+
+
+#subscribe span {
+	display: block;
+	vertical-align: middle;
+}
+
+#subscribe-form{
+	display: block;
+}
+
+#news h4{
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+#news p{
+	padding: 0;
+	margin-top: 10px;
+	font-size: 18px;
+	color: #494b56;
+}
+
+
+
+@-webkit-keyframes animToTop{
+    0%{
+	    top:0;
+    }
+    90%{
+	    top:-11px;
+    }
+    100%{
+	    top: -10px;
+    }
+}
+
+@-webkit-keyframes animToDown{
+    0%{
+	    top:-10px;
+    }
+    100%{
+	    top: 0;
+    }
+}
+
+
+
+
+footer{
+	text-align: center;
+	font-size: 13px;
+	color: #4b4b4c;
+	padding: 60px 0;
+	width: 100%;
+	-webkit-animation: fadein-footer 3s;
+}
+
+footer a{
+	color: #6D859C;
+	color: #82919c;
+	color: hsl(231, 5%, 46%);
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: white;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #494b56;
+}
+
+footer ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+
+footer li{
+	display: inline-block;
+	margin: 0 3px;
+	cursor: default;
+}
+
+.anchor-pointer{
+	background-image: url(http://pleeq.com/resources/anchor-pointer-icon.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.mac-player{
+	background-image: url(http://pleeq.com/resources/mac-player-icon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #2E2E2E;
+	background-position: center center;
+}
+
+.board-games{
+	background-image: url(http://pleeq.com/resources/curtains.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.taskler{
+	background-image: url(http://pleeq.com/resources/taskler-icon.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.clicker-counter{
+	background-image: url(http://pleeq.com/resources/clicker.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #2E2E2E;
+	background-position: center center;
+}
+
+
+.footer-sep{
+	margin: 0 10px;
+}
+
+
+.folder-box:hover .quick-link-app-store{
+	opacity: 1;
+	-webkit-transition: opacity .3s;
+}
+
+.quick-link-app-store:hover{
+	color: #2f3035 !important;
+	background: #8c8e9b;
+	border-color: #8c8e9b;
+}
+
+#web{
+	color: white;
+	-webkit-animation: fadein-footer 3s;
+}
+
+#web a{
+	text-decoration: none;
+}
+
+#web td{
+	vertical-align: top;
+	border-bottom: none;
+    border-top: 1px solid #555559;
+    border-collapse: collapse;
+	padding: 20px 20px 40px;
+}
+
+#web td:first-child{
+	padding-left: 0;
+}
+
+#web td:last-child{
+	padding-right: 0;
+}
+
+#web tr:first-child td{
+	border: none !important;
+	padding-bottom: 20px;
+}
+
+#web .small{
+	font-size: 12px;
+	color: #959598;
+	margin-top: 5px;
+}
+
+#web table td:nth-of-type(1) a:first-child{
+	color: white;
+	font-weight: 600;
+}
+
+#web table td:nth-of-type(3) a{
+	color: #7496B6;
+}
+
+#web .desctiption{
+	color: #959598;
+	font-size: 16px;
+	width: 240px;
+}
+
+#web table{
+	max-width: 900px;
+	border-spacing: 0;
+	margin: 50px auto;
+}
+
+#web #title{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+#web table td:nth-of-type(3) a:hover{
+	color: #369eff;
+	border-bottom: 1px solid #369eff;
+}
+
+.desctiption a{
+	color: #7496B6;
+}
+
+#web .small a{
+	color: #959598 !important;
+	font-weight: normal !important;
+}
+
+.media-logo{
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+}
+
+.logo-hover:hover{
+	border-bottom: none !important;
+}
+
+.twi{
+	width: auto;
+}
+
+center{
+	color: white;
+	margin-top: 20px;
+}
+
+center a{
+	color: #7496B6;
+	text-decoration: none;
+}
+
+center .support{
+	-webkit-animation: fadein-footer 3s;
+	border-bottom: none;
+	background: #bb9fe1;
+	background: -moz-linear-gradient(top, #bb9fe1 0, #8763bc 100%);
+	background: -webkit-linear-gradient(top, #bb9fe1 0, #8763bc 100%);
+	background: linear-gradient(to bottom, #bb9fe1 0, #8763bc 100%);
+	text-decoration: none;
+	color: #fff !important;
+	padding: 4px 16px;
+	font-weight: normal;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .6);
+	border-radius: 50px;
+}
+
+.pulse{
+	
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(0, 0, 0, .1), 0 0 400px rgba(0, 0, 0, .1) inset;
+    }
+
+    50% {
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(0, 0, 0, .1), 0 0 400px rgba(0, 0, 0, .4) inset;
+    }
+
+    100% {
+
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(0, 0, 0, .1), 0 0 400px rgba(0, 0, 0, .1) inset;
+    }
+}
+
+
+#instagram-box{
+	display: block;	
+	text-align: center;
+	-webkit-animation: fadein-footer 3s;
+}
+
+#instagram-box h3{
+	
+	font-size: 140%;
+	margin-bottom: 40px;
+	display: inline-block;
+	color: white;
+}
+
+#instagram-box h3 a{
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid orange;
+}
+
+#instagram {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	text-align: center;
+}
+
+#instagram li {
+	list-style:none;
+	display: inline-block;
+	vertical-align: top;
+	margin:0px 20px 20px 0px;
+	width: 12%;
+	max-width: 180px;
+}
+
+#instagram img{
+	max-width: 100%;
+	width: 150px;
+}
+
+#instagram img:hover{
+	opacity: .9;
+}
+*/
+/*-------------------- MacBook 11" --------------------*/
+
+/*
+@media only screen and (max-width: 1220px){
+.folder {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+}
+.folder-box{
+	width: 250px;
+}
+#projects h2{
+	font-size: 24px;
+}
+.subtitle{
+	font-size: 13px;
+}
+header p{
+	font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 1023px){
+.folder {
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+}
+.folder-box{
+	width: 190px;
+}
+h2{
+	font-size: 22px !important;
+}
+}
+
+
+*/
+
+
+
+*/

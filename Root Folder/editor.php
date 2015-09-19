@@ -258,17 +258,17 @@ if(!empty($_POST['publish']) && $update){
 	
 	curl_setopt($ch, CURLOPT_URL,"https://go.goroost.com/api/push");
 	curl_setopt($ch, CURLOPT_POST, 1);
-	curl_setopt($ch, CURLOPT_USERPWD, "4c81eda8d1c6482b80fc49459d4c2a33:a6053eedfade4e9ba40260e259b6add8");
+	curl_setopt($ch, CURLOPT_USERPWD, "path");
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	curl_exec($ch);
 	curl_close ($ch);
 
 	$tmhOAuth = new tmhOAuth(array(
-	  'consumer_key' => 't0ZPEQfcFhgnzi60ASQn5g',
-	  'consumer_secret' => '2AzmZ2CNyylBzMWmnq80jUcJ9ZG4DAqvejox1ktOTY',
-	  'user_token' => '406829796-Lkd6X3shmYd1DCLB3sHwpjqAN8FSJaI0bN7OQ2Mr',
-	  'user_secret' => 'TIp4PBkzwqHgzrzRvM8kiIh45tOqRMoDiiyOkK6kjo',
+	  'consumer_key' => 'key',
+	  'consumer_secret' => 'secret',
+	  'user_token' => 'token',
+	  'user_secret' => 'secret',
 	));
 	
 	
@@ -1208,29 +1208,29 @@ $('#saveChanges').click(function(){
 		
 	</div>
 	<div id="editor-left">
-		<div id="top-toolbar"><form action="" name="publishForm" method="post"><input name="publish" type="submit" value="Опубликовать"><a href="http://macilove.com/news/<?php echo $url; ?>/">Просмотреть</a>  <a href="http://macilove.com">Macilove</a></form><form method="post" action="" name="editorForm" enctype='multipart/form-data'>
+		<div id="top-toolbar"><form action="" name="publishForm" method="post"><input name="publish" type="submit" value="Publish"><a href="http://macilove.com/news/<?php echo $url; ?>/">Preview</a>  <a href="http://macilove.com">Macilove</a></form><form method="post" action="" name="editorForm" enctype='multipart/form-data'>
 		<br />
 		Main: <input type="file" name="mainImage" id="mainImage"><br />
 		<select name="categories" style="float:left; clear:left; font-size:12px;">
-	      <option selected="selected" value="0" <?php echo $categories0; ?>>Новости Apple</option>
-	      <option value="13" <?php echo $categories13; ?>>Обзор аксессуаров Apple</option>
+	      <option selected="selected" value="0" <?php echo $categories0; ?>>Apple Apple</option>
+	      <option value="13" <?php echo $categories13; ?>>Apple accessories reviews </option>
 	      <option></option>
-	      <option value="3" <?php echo $categories3; ?>> Игры для iOS</option>
-	      <option value="1" <?php echo $categories1; ?>> Игры для iPhone</option>
-	      <option value="2" <?php echo $categories2; ?>> Игры для iPad</option>      
+	      <option value="3" <?php echo $categories3; ?>> Games for iOS</option>
+	      <option value="1" <?php echo $categories1; ?>> Games for iPhone</option>
+	      <option value="2" <?php echo $categories2; ?>> Games for iPad</option>      
 	      <option></option>
-	      <option value="6" <?php echo $categories6; ?>>Приложения для iOS</option>
-	      <option value="4" <?php echo $categories4; ?>>Приложения для iPhone</option>
-	      <option value="5" <?php echo $categories5; ?>>Приложения для iPad</option>
+	      <option value="6" <?php echo $categories6; ?>>Apps for iOS</option>
+	      <option value="4" <?php echo $categories4; ?>>Apps for iPhone</option>
+	      <option value="5" <?php echo $categories5; ?>>Apps for iPad</option>
 	      <option></option>
-	      <option value="7" <?php echo $categories7; ?>>Приложения для Mac OS X</option>
-	      <option value="8" <?php echo $categories8; ?>>Игры для Mac OS X</option>
+	      <option value="7" <?php echo $categories7; ?>>Apps for Mac OS X</option>
+	      <option value="8" <?php echo $categories8; ?>>Games for Mac OS X</option>
 	      <option></option>
-	      <option value="10" <?php echo $categories10; ?>>Трюки и секреты Mac OS X</option>
-	      <option value="9" <?php echo $categories9; ?>>Трюки и секреты iOS</option>
+	      <option value="10" <?php echo $categories10; ?>>Tricks and secrets Mac OS X</option>
+	      <option value="9" <?php echo $categories9; ?>>Tricks and secrets iOS</option>
 	    </select><br />
 		<br />
-		<input type="button" name="saveChanges" id="saveChanges" value="Сохранить">
+		<input type="button" name="saveChanges" id="saveChanges" value="Save">
 		<br />Editors choice: <input type="checkbox" name="editors">
 		</div>
 		
@@ -1240,8 +1240,10 @@ $('#saveChanges').click(function(){
 		<input type="text" name="url" placeholder="url" value="<?php echo $url; ?>"><br />
 		<b>Source</b><br />
 		<input type="text" name="source" placeholder="source" value="<?php echo $source; ?>"><br />
+<!--
 		<b>Keywords</b><br />
 		<input type="text" name="keywords" placeholder="keywords"></div>
+-->
 		
 		</form>
 	</div><div id="preview"></div>
