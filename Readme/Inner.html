@@ -1,0 +1,455 @@
+ <!DOCTYPE HTML>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<link rel="stylesheet" type="text/css" href="http://macilove.com/news/style.css">
+<script type="text/javascript" src="http://macilove.com/resources/jquery-2.1.0.min.js"></script>
+<script src="http://macilove.com/news/jquery.lazyload.min.js" type="text/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<script src="http://macilove.com/resources/slideshow.js"></script>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="http://macilove.com/resources/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://macilove.com/resources/apple-touch-icon-114x114.png" />
+<link rel="alternate" type="application/rss+xml" href="http://macilove.com/rss/" />
+
+<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8052564-20']);
+		_gaq.push(['_trackPageview']);
+		
+		setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])", 15000);
+		
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+  
+		$(function() {
+		$("img.lazy").lazyload();	
+		});
+  
+
+</script>
+<!-- Please call pinit.js only once per page -->
+<!-- <script type="text/javascript" async defer  data-pin-color="red" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script> -->
+
+
+<title>Pencil is a revolutionary stylus for iPad — Macilove</title>
+<meta property="og:title" content="Pencil — стилус, созданный специально для приложения для iPad"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="http://macilove.com/images/pencil-stylus-is-specially-designed-for-ipad-app-paper.jpg"/>
+<meta property="og:description" content="Нью-Йоркская компания создала уникальный стилус Pencil для iPad" />
+<meta property="og:url" content="http://macilove.com/news/pencil-stylus-is-specially-designed-for-ipad-app-paper/" />
+
+
+<script type="text/javascript">
+/*  console.log(''); */
+
+
+$(window).load(function() {
+
+	$(window).scroll(function(){
+	if ($(this).scrollTop() > 3000) {
+	$('#up-arrow').fadeIn();
+	} else {
+		$('#up-arrow').fadeOut();
+	}
+	});
+	
+	$('#up-arrow').click(function(){	
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+	return false;
+	});
+
+	$('#subscribe input').keypress(function(e) {
+        if(e.which == 13) {
+            jQuery(this).blur();
+            jQuery('#emailUserSignUp').focus().click();
+        }
+    });
+
+  /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+           
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},300);
+                    
+            }
+            
+        }); 
+    
+    });
+
+	$(document).ready(function(){
+		
+	
+
+		$('#emailUserSignUp').click(function()
+		{
+		
+			var name = $('#emailUserName').val();
+			var box = $('#emailUserBox').val();
+			if(name && box)
+			{
+				$.post(
+				'../../news_delivery_invite.php',  
+		        {'email':box,'name':name},
+		        function(responseText){ 
+		        	/* console.log(responseText); */
+		        
+					$('#emailUserName').hide();
+					$('#emailUserBox').hide();
+					$('#emailUserSignUp').hide();
+					$('#succeed').show();
+					return;
+				    
+				},  
+		        "html");
+				
+			}
+			
+		});
+	
+	
+	
+	});
+	
+
+var showMorePage =2;
+var allow_autoload = 1;
+var scrolltrigger = 0.9;
+	
+$(window).scroll(function()
+{
+	
+	var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+
+
+	
+	
+	
+	if(allow_autoload ==1)
+	if  ((wintop/(docheight-winheight)) > scrolltrigger) 
+	{
+	allow_autoload = 0;
+	    $('#spinner').toggle();
+		$.post(
+			'./../moreArticles.php',  
+	        {'showMore':1,'showMorePage':showMorePage,'showMoreColumn':1},  
+	        function(responseText){  
+		      	
+		    	$('#news-article ul').append(responseText); 
+		      
+				showMorePage++;
+		      
+	        },  
+	        "html"  
+	        ).done(function() {
+	        allow_autoload = 1; 
+		        $('.spinner').toggle();
+		    });
+	        
+	}
+});
+
+});
+</script>
+<script>
+    var _roost = _roost || [];
+    _roost.push(['appkey','4c81eda8d1c6482b80fc49459d4c2a33']);
+
+    !function(d,s,id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+            js=d.createElement(s); js.id=id;
+            js.src='//cdn.goroost.com/js/roost.js';
+            fjs.parentNode.insertBefore(js,fjs);
+        }
+    }(document, 'script', 'roost-js');
+</script>
+<style type="text/css">
+#fresh-reversi-banner{
+	width: 660px;
+	background: hsl(58, 100%, 51%);
+	border-bottom: 1px solid #ebebeb;
+	display: block;
+	color: #212417;
+	text-decoration: none;
+	font-family: "SF UI Display", "Helvetica Neue", Arial, sans-serif;
+	z-index: 100;
+	text-align: center;
+	line-height: 140%;
+	padding: 10px 0;
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	margin-top: -20px;
+}
+#fresh-reversi-banner #grey{
+	color: #999;
+	display: none;
+}
+#revers-wrapper{
+	max-width: 980px;
+	text-align: left;
+	display: inline-block;
+}
+#fresh-reversi-banner h1{
+	font-size: 16px;
+	line-height: 140%;
+}
+#fresh-reversi-banner h2{
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 140%;
+}
+#fresh-reversi-banner h3{
+	font-size: 14px;
+	color: black;
+	line-height: 140%;
+}
+#fresh-icon{
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#fresh-title{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+	<div class="pin">
+		<a href="http://macilove.com" id="logo"></a>
+	<ul>
+		<li id="active"><a href="http://macilove.com/news/apple-news/">Apple News</a></li>
+		<li ><a href="http://macilove.com/news/games-for-ios/">iOS Games</a></li>
+		<li ><a href="http://macilove.com/news/apps-for-ios/">iOS Apps</a></li>
+		<li ><a href="http://macilove.com/news/apps-and-games-for-mac-os-x/">Mac Apps</a></li>
+		<li ><a href="http://macilove.com/news/tricks-and-secrets-mac-os-x-ios/">Tricks & Secrets</a></li>
+	</ul>
+	<ul>
+		<li><a href="http://macilove.com/best-mac-os-x-apps/">Best Apps</a></li>
+		<li><a href="http://macilove.com/os-x-wallpapers/">Wallpapers</a></li>
+		<li><a href="http://macilove.com/books/">Books</a></li>
+	</ul>
+	<footer>
+		<ul>
+			<li>© 2015 Macilove.com</li>
+			<li><a href="http://macilove.com/about/">About Us</a></li>
+		</ul>
+	</footer>
+	<div id="up-arrow"></div>
+	</div>
+</nav>
+
+<article id="page">
+
+	<section id="text">
+		<a href="http://macilove.com/editor/pencil-stylus-is-specially-designed-for-ipad-app-paper/" id="screwdriver"></a>		
+		<div id="article-header">
+			
+			<div>
+				<div id="typ"></div>
+				<img src="http://macilove.com/images/pencil-stylus-is-specially-designed-for-ipad-app-paper.jpg" width="560" height="290" alt="Pencil — стилус, созданный специально для приложения для iPad">
+			</div>
+			<h1>Pencil is a revolutionary stylus for iPad</h1>
+			<h2>Pencil is the most natural and expressive tool for getting ideas on Paper</h2>
+			<hr/>
+			<div id="toolb">
+				<span><a href="http://macilove.com/news/apple-accessories-reviews/">Accessories Reviews</a></span>
+				<span>·</span>
+				<span>21.11.13 at 00:29 AM</span>
+				<span>·</span>
+				<span>Reading 5 min</span>
+			</div>
+		</div>
+
+		
+		<div id="source"></div>
+		<div class="image"><img src="http://macilove.com/images/pencil-stylus-is-specially-designed-for-ipad-app-paper.jpg" width="520" height="270"  alt="Pencil — стилус, созданный специально для приложения для iPad"></div><p>FiftyThree company has been known for a long time due to the development of its applications Paper, which turns the surface of the iPad in real sketch pad. Paper application created with great attention to detail and very closely follows the look and physics of drawing on paper, pens, pencils, brushes.</p><p>Paper application is free, allowing you to try out basic functions: a tool for drawing, a number of different colors and a number of albums for drawing. The rest of the brush and palette is sold through built-in purchase. </p><div class="article-img"><img src="http://macilove.com/images/pencil-stylus-is-specially-designed-for-ipad-app-paper-0.jpg"></div><p>However, there is one problem: draw your finger is not always convenient, and knowing that the company FiftyThree decided to take the decision into their own hands and create a stylus called Pencil, which turned out just as beautiful as, convenient and most importantly adds experience with the application Paper's full.</p><div class="article-img"><img src="http://macilove.com/images/pencil-stylus-is-specially-designed-for-ipad-app-paper-1.jpg"></div><p>"Great tools inspire great ideas. Pencil is the most natural and expressive tool for implementing ideas Paper. Advanced technology combined with beautiful design to keep you in the flow, without having to change tools. With a rubber band, mixing and adaptive definition touch palm Pencil transmits all the creative possibilities in your hands."</p><div class="article-img"><img src="http://macilove.com/images/pencil-stylus-is-specially-designed-for-ipad-app-paper-2.jpg"></div><h3>Pencil features</h3><p><strong>Hand touch detection system (Palm rejection).</strong> Working with a stylus Pencil Paper application will automatically detect that you touch the surface of the hand and the iPad will not leave an unnecessary footprint on an electronic canvas.</p><p><strong>Eraser.</strong> The ability to quickly erase as important as the actual drawing. Even made a mistake fix it is not difficult: scroll with two fingers on the screen surface Paper counterclockwise to undo the last action or turning the stylus Pencil erase drawn, as you erase the usual ordinary pencil eraser.</p><p><strong>Grind.</strong> Working with the stylus, you can accurately draw a thin line, and your skin may be useful to rub painted in soft surfaces, borders and shadows. </p><div class="article-img"><img src="http://macilove.com/images/pencil-stylus-is-specially-designed-for-ipad-app-paper-5.jpg"></div><h3>Stylish outside, technological inside</h3><p>Pencil Stylus is made of a single piece of walnut premium and is sold in two versions: brown wood and black aluminum. The device has an electronic stuffing, for example, turning Pencil sensor will transmit information about the application and switch to the eraser mode automatically. The Pencil integrated Bluetooth Smart, which transmits data on the device, thus consumes very little power. Incidentally Pencil need to periodically recharge from a USB port, but it's not hard, just by removing the tip you connect it to your Mac, and after 90 minutes the stylus is fully charged, and one charge of the device can operate for a month or 43829 minutes.</p><div class="article-img"><img src="http://macilove.com/images/pencil-stylus-is-specially-designed-for-ipad-app-paper-4.jpg"></div><p>At the tip of a small built-in rod, which defines with the utmost precision the degree of depression. Rod itself is made of 14-karat gold, which provides lightning speed and accuracy of response. The wooden version of the stylus also has a magnet inside for attaching the stylus to the lid or cover Cover Flow Smart Cover for the iPad.</p><div class="article-img"><img src="http://macilove.com/images/pencil-stylus-is-specially-designed-for-ipad-app-paper-3.jpg"></div><p><strong>Device support.</strong> Pencil will work with all iPad with retina display and all the iPad mini. iPad 2 is not supported.</p><p><strong>Delivery.</strong> Currently Pencil will be available in the US and Canada in 2-3 weeks.</p><iframe src="//player.vimeo.com/video/78124534?title=0&byline=0&portrait=0" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>		
+		<div id="ya-article-bottom">
+		<!-- Яндекс.Директ -->
+<div id="yandex_ad2"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(113966, "yandex_ad2", {
+            stat_id: 10,
+            ad_format: "direct",
+            font_size: 0.9,
+            type: "horizontal",
+            limit: 1,
+            title_font_size: 3,
+            links_underline: false,
+            site_bg_color: "FFFFFF",
+            title_color: "F13900",
+            url_color: "5A7321",
+            text_color: "333333",
+            hover_color: "3C5160",
+            sitelinks_color: "ED5F05",
+            no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>	
+		</div>
+						
+	</section>
+	<section id="top-article">
+		<h2>Now Reading</h2>
+		<ul>
+			<li><a href="http://macilove.com/news/how-to-teach-your-iphone-better-recognize-fingerprints/"><img src="http://macilove.com/img/thumbnails/how-to-teach-your-iphone-better-recognize-fingerprints-s.jpg" width="150" height="100" alt="Как научить iPhone лучше распознавать отпечатки пальцев"></a><a href="http://macilove.com/news/how-to-teach-your-iphone-better-recognize-fingerprints/">Как научить iPhone лучше распознавать отпечатки пальцев</a></li><li><a href="http://macilove.com/news/burn-application-for-advanced-dvd-recording/"><img src="http://macilove.com/images/burn-application-for-advanced-dvd-recording-s.jpg" width="150" height="100" alt="Burn — приложение для записи дисков"></a><a href="http://macilove.com/news/burn-application-for-advanced-dvd-recording/">Burn — приложение для записи дисков</a></li><li><a href="http://macilove.com/news/review-of-the-best-file-manager-for-os-x/"><img src="http://macilove.com/images/review-of-the-best-file-manager-for-os-x-s.jpg" width="150" height="100" alt="Обзор лучших файловых менеджеров для OS X"></a><a href="http://macilove.com/news/review-of-the-best-file-manager-for-os-x/">Обзор лучших файловых менеджеров для OS X</a></li><li><a href="http://macilove.com/news/managing-call-waiting-on-the-iphone/"><img src="http://macilove.com/images/managing-call-waiting-on-the-iphone-s.jpg" width="150" height="100" alt="Как управлять ожиданием вызова на iPhone"></a><a href="http://macilove.com/news/managing-call-waiting-on-the-iphone/">Как управлять ожиданием вызова на iPhone</a></li></ul><ul><li><a href="http://macilove.com/news/game-left-4-dead-2-for-os-x-became-free-in-the-holidays-season/"><img src="http://macilove.com/images/game-left-4-dead-2-for-os-x-became-free-in-the-holidays-season-s.jpg" width="150" height="100" alt="Игра Left 4 Dead 2 для OS X стала бесплатной в честь праздников"></a><a href="http://macilove.com/news/game-left-4-dead-2-for-os-x-became-free-in-the-holidays-season/">Игра Left 4 Dead 2 для OS X стала бесплатной в честь праздников</a></li><li><a href="http://macilove.com/news/how-to-completely-remove-microsoft-office-2011-from-os-x/"><img src="http://macilove.com/images/how-to-completely-remove-microsoft-office-2011-from-os-x-s.jpg" width="150" height="100" alt="Как полностью удалить Microsoft Office 2011 из OS X"></a><a href="http://macilove.com/news/how-to-completely-remove-microsoft-office-2011-from-os-x/">Как полностью удалить Microsoft Office 2011 из OS X</a></li><li><a href="http://macilove.com/news/colorsnapper-application-for-allocation-hex-and-rgb-color-in-os-x/"><img src="http://macilove.com/images/colorsnapper-application-for-allocation-hex-and-rgb-color-in-os-x-s.jpg" width="150" height="100" alt="ColorSnapper — приложение для выделения HEX и RGB цветов в OS X (обновлено)"></a><a href="http://macilove.com/news/colorsnapper-application-for-allocation-hex-and-rgb-color-in-os-x/">ColorSnapper — приложение для выделения HEX и RGB цветов в OS X (обновлено)</a></li><li><a href="http://macilove.com/news/how-to-get-a-refund-for-an-application-purchased-from-the-app-store/"><img src="http://macilove.com/img/thumbnails/how-to-get-a-refund-for-an-application-purchased-from-the-app-store-s.jpg" width="150" height="100" alt="Как вернуть деньги за купленное приложение в App Store"></a><a href="http://macilove.com/news/how-to-get-a-refund-for-an-application-purchased-from-the-app-store/">Как вернуть деньги за купленное приложение в App Store</a></li>		</ul>
+<!-- 		<ul style="margin-bottom: 20px; margin-top: 0px; margin-left: -7px;"> -->
+				<!-- Яндекс.Директ -->
+<!--
+				<div id="yandex_ad3"></div>
+				<script type="text/javascript">
+				(function(w, d, n, s, t) {
+				    w[n] = w[n] || [];
+				    w[n].push(function() {
+				        Ya.Direct.insertInto(113966, "yandex_ad3", {
+				            stat_id: 15,
+				            ad_format: "direct",
+				            font_size: 0.9,
+				            font_family: "arial",
+				            type: "horizontal",
+				            limit: 2,
+				            title_font_size: 3,
+				            links_underline: false,
+				            site_bg_color: "FFFFFF",
+				            title_color: "000000",
+				            url_color: "ED5F05",
+				            text_color: "777777",
+				            hover_color: "ED5F05",
+				            sitelinks_color: "ED5F05",
+				            no_sitelinks: false
+				        });
+				    });
+				    t = d.getElementsByTagName("script")[0];
+				    s = d.createElement("script");
+				    s.src = "//an.yandex.ru/system/context.js";
+				    s.type = "text/javascript";
+				    s.async = true;
+				    t.parentNode.insertBefore(s, t);
+				})(window, document, "yandex_context_callbacks");
+				</script>
+			</ul>
+-->
+	</section>
+
+	<section id="news-article">
+		<ul>
+			<li>
+			<a href="http://macilove.com/news/how-quickly-cancel-sending-imessage/" class="big">
+				<img class="lazy" data-original="http://macilove.com/img/original/how-quickly-cancel-sending-imessage.jpg" width="560" height="290">
+				<h2>Как быстро отменить отправку сообщения iMessage</h2>
+				<p>Включив авиарежим можно отменить отправку сообщений, видео или фото по iMessage
+				</p>
+				<div class="toolb">20.08.15 в 16:30</div>
+			</a>
+			</li><li>
+			<a href="http://macilove.com/news/hidden-directories-and-files-in-os-x-explained/" class="big">
+				<img class="lazy" data-original="http://macilove.com/img/original/hidden-directories-and-files-in-os-x-explained.jpg" width="560" height="290">
+				<h2>Значения системных директорий и скрытых файлов в OS X</h2>
+				<p>Описание системных папок и файлов OS X, часто скрытых от глаз пользователя
+				</p>
+				<div class="toolb">30.06.15 в 11:27</div>
+			</a>
+			</li><li><div class="title"><div class="toolbar">
+					<span class="type"><a href="http://macilove.com/news/secrets-mac-os-x/">Трюки и секреты Mac OS X</a></span>
+					<span class="sep">|</span>
+					<span class="date">22.06.15 в 13:08</span>
+				</div>
+				<h2><a href="http://macilove.com/news/how-to-reset-folders-view-options-in-os-x/">Как сбросить настройки вида всех папок в OS X?</a></h2>
+				<p>Существует терминальная команда, которая сбрасывает настройки оформления папок OS X</p>
+			</div><a href="http://macilove.com/news/how-to-reset-folders-view-options-in-os-x/"><img src="http://macilove.com/img/thumbnails/how-to-reset-folders-view-options-in-os-x-m.jpg" width="200" height="140" alt="Как сбросить настройки вида всех папок в OS X?"></a>
+		</li><li><div class="title"><div class="toolbar">
+					<span class="type"><a href="http://macilove.com/news/secrets-mac-os-x/">Трюки и секреты Mac OS X</a></span>
+					<span class="sep">|</span>
+					<span class="date"> 8.06.15 в 15:56</span>
+				</div>
+				<h2><a href="http://macilove.com/news/how-to-turn-video-shot-on-the-iphone/">Как перевернуть видео снятое на iPhone</a></h2>
+				<p>С помощью QuickTime можно развернуть видео снятое на iPhone или iPad</p>
+			</div><a href="http://macilove.com/news/how-to-turn-video-shot-on-the-iphone/"><img src="http://macilove.com/img/thumbnails/how-to-turn-video-shot-on-the-iphone-m.jpg" width="200" height="140" alt="Как перевернуть видео снятое на iPhone"></a>
+		</li><li><div class="title"><div class="toolbar">
+					<span class="type"><a href="http://macilove.com/news/secrets-iphone-ipad/">Трюки и секреты iPhone и iPad</a></span>
+					<span class="sep">|</span>
+					<span class="date"> 3.06.15 в 19:50</span>
+				</div>
+				<h2><a href="http://macilove.com/news/how-to-get-a-refund-for-an-application-purchased-from-the-app-store/">Как вернуть деньги за купленное приложение в App Store</a></h2>
+				<p>Непонравившуюся покупку в App Store можно отменить, вернув деньги на вашу карту в течение 90 дней</p>
+			</div><a href="http://macilove.com/news/how-to-get-a-refund-for-an-application-purchased-from-the-app-store/"><img src="http://macilove.com/img/thumbnails/how-to-get-a-refund-for-an-application-purchased-from-the-app-store-m.jpg" width="200" height="140" alt="Как вернуть деньги за купленное приложение в App Store"></a>
+		</li><li><div class="title"><div class="toolbar">
+					<span class="type"><a href="http://macilove.com/news/secrets-mac-os-x/">Трюки и секреты Mac OS X</a></span>
+					<span class="sep">|</span>
+					<span class="date"> 2.06.15 в 15:21</span>
+				</div>
+				<h2><a href="http://macilove.com/news/how-to-simultaneously-open-all-the-folders-in-the-finder-in-list-mode/">Как одновременно открыть все папки в Finder в режиме списка</a></h2>
+				<p>Специальные горячие клавиши Finder открывают все папки в режиме списке, включая их подпапки</p>
+			</div><a href="http://macilove.com/news/how-to-simultaneously-open-all-the-folders-in-the-finder-in-list-mode/"><img src="http://macilove.com/img/thumbnails/how-to-simultaneously-open-all-the-folders-in-the-finder-in-list-mode-m.jpg" width="200" height="140" alt="Как одновременно открыть все папки в Finder в режиме списка"></a>
+		</li><li><div class="title"><div class="toolbar">
+					<span class="type"><a href="http://macilove.com/news/secrets-iphone-ipad/">Трюки и секреты iPhone и iPad</a></span>
+					<span class="sep">|</span>
+					<span class="date"> 1.06.15 в 14:03</span>
+				</div>
+				<h2><a href="http://macilove.com/news/how-to-store-an-infinite-number-of-pictures-from-the-iphone-to-the-cloud-for-free/">Как хранить бесконечное число фотографии с iPhone в облаке бесплатно</a></h2>
+				<p>Сервис Google Photos предлагает безлимитный объем облачного сервиса для хранения фотографий и видео для ваших iPhone и iPad</p>
+			</div><a href="http://macilove.com/news/how-to-store-an-infinite-number-of-pictures-from-the-iphone-to-the-cloud-for-free/"><img src="http://macilove.com/img/thumbnails/how-to-store-an-infinite-number-of-pictures-from-the-iphone-to-the-cloud-for-free-m.jpg" width="200" height="140" alt="Как хранить бесконечное число фотографии с iPhone в облаке бесплатно"></a>
+		</li><li><div class="title"><div class="toolbar">
+					<span class="type"><a href="http://macilove.com/news/secrets-iphone-ipad/">Трюки и секреты iPhone и iPad</a></span>
+					<span class="sep">|</span>
+					<span class="date">31.05.15 в 21:14</span>
+				</div>
+				<h2><a href="http://macilove.com/news/how-to-create-an-airplay-speakers/">Как самому создать AirPlay колонки</a></h2>
+				<p>С помощью AirPort Express и внешних колонок можно собрать свою AirPlay систему</p>
+			</div><a href="http://macilove.com/news/how-to-create-an-airplay-speakers/"><img src="http://macilove.com/img/thumbnails/how-to-create-an-airplay-speakers-m.jpg" width="200" height="140" alt="Как самому создать AirPlay колонки"></a>
+		</li><li><div class="title"><div class="toolbar">
+					<span class="type"><a href="http://macilove.com/news/apps-for-mac-os-x/">Приложения для Mac OS X</a></span>
+					<span class="sep">|</span>
+					<span class="date"> 2.04.15 в 13:42</span>
+				</div>
+				<h2><a href="http://macilove.com/news/gaget-widget-google-analytics-to-yosemite/">GAget — виджет Google аналитики для Yosemite</a></h2>
+				<p>Разработчик виджета GAget выпустил его обновленную версию для OS X Yosemite</p>
+			</div><a href="http://macilove.com/news/gaget-widget-google-analytics-to-yosemite/"><img src="http://macilove.com/img/thumbnails/gaget-widget-google-analytics-to-yosemite-m.jpg" width="200" height="140" alt="GAget — виджет Google аналитики для Yosemite"></a>
+		</li><li>
+			<a href="http://macilove.com/news/paste-application-to-store-clipboard-history-in-os-x/" class="big">
+				<img class="lazy" data-original="http://macilove.com/img/original/paste-application-to-store-clipboard-history-in-os-x.jpg" width="560" height="290">
+				<h2>Paste — приложение для хранения истории буфера обмена в OS X</h2>
+				<p>Красивое приложение для удобной работы с историей буфера обмена OS X, включая текст, картинки, видео, файлы папки и прочие форматы
+				</p>
+				<div class="toolb">24.03.15 в 17:04</div>
+			</a>
+			</li>			
+		</ul>
+		
+		<div id="spinner">
+			<img src="http://macilove.com/resources/spinner.gif" width="36" height="39">
+		</div>
+	</section>
+</article>
+
+</body>
+</html>

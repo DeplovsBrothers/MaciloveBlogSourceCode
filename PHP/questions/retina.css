@@ -1,0 +1,193 @@
+.app-store-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/app-store_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.imac-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/imac_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.ios-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/ios_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.ipad-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/ipad_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.iphone-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/iphone_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.ipod-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/ipod_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.mac-mini-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/mac-mini_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.mac-pro-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/mac-pro_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.macbook-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/macbook_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.os-x-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/os-x_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.xcode-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/xcode_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.accessories-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/accessories_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.applications-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/applications_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.other-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/other_2x.jpg);
+	display: inline-block;
+	width: 150px;
+	height: 115px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.error-note-icon{
+	background-image: url(http://macilove.com/questions/answers-icons/error-icon_2x.png);
+	display: inline-block;
+	width: 17px;
+	height: 15px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 0;
+}
+
+.its-help-icon{
+	display: block;
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+	background-image: url(http://macilove.com/questions/answers-icons/its-help-icon_2x.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.switcher-icon-right{
+	display: block;
+	width: 36px;
+	height: 19px;
+	overflow: hidden;
+	background-image: url(http://macilove.com/questions/answers-icons/switcher-right_2x.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 0;
+	margin-top: 5px;
+}
+
+.switcher-icon-left{
+	display: block;
+	width: 36px;
+	height: 19px;
+	overflow: hidden;
+	background-image: url(http://macilove.com/questions/answers-icons/switcher-left_2x.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 0;
+	margin-top: 5px;
+}
+
+.switcher{
+	margin-right: 5px;
+}
+
+
+#search-input{
+	opacity: 0.7;
+	height: 30px;
+	font-size: 16px;
+	border-radius: 3px;
+	width: 440px;
+	display: block;
+	outline: none;
+	border: 1px solid #999;
+	-webkit-appearance: none;
+	-webkit-box-sizing: content-box;
+	-moz-appearance: textfield;
+	margin-top: 8px;
+	float: left;
+	color: #333;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}

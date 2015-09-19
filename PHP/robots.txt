@@ -1,0 +1,6 @@
+User-agent: *
+Sitemap: http://macilove.com/sitemap.xml
+
+Disallow: /news/page/
+Disallow: /trash/
+Disallow: /sitemap.xml

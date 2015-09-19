@@ -1,0 +1,1390 @@
+html {
+    -webkit-text-size-adjust: none;
+}
+
+body{
+	margin: 0;
+	padding:0;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	background-repeat: repeat;
+	background-color: #f2f2f2;
+}
+
+a{
+	color: #08c;
+}
+
+h3{
+	color: black;
+	font-size: 22px;
+	line-height: 27px;
+	font-weight: normal;
+	width: 660px;
+	text-align: left;
+	padding: 0 140px;
+	margin: 0;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#logo{
+	background-image: url(http://macilove.com/resources/logo.svg);
+	background-repeat: no-repeat;
+	width: 125px;
+	height: 30px;
+	background-position: -10px 0;
+	display: inline-block;
+	margin-bottom: -5px;
+	margin-right: 93px;
+}
+
+nav{
+	margin: 0 auto;
+	width: 980px;
+	margin-top: 25px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+}
+
+nav li{
+	display: inline-block;
+	margin: 0px;
+	padding: 0;
+	margin-right: 15px;
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+	text-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+
+nav a:hover{
+	color: #08c;
+}
+
+nav #active{
+	color: #8D949A !important;
+}
+
+#search{
+	float: right;
+	margin: 0 !important;
+}
+
+#search input{
+	width: 150px;
+	margin-top: 9px;
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 980px;
+}
+
+#main-bg{
+	background: white;
+	width: 940px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	border-radius: 4px;
+	padding: 20px;
+	padding-bottom: 10px;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#filter-box{
+	padding: 5px 0px 0px 0px;
+	text-align: center;
+	width: 980px;
+	font-size: 11px;
+	vertical-align: bottom;
+	margin-left: -20px;
+	margin-top: -20px;
+	border-bottom: 1px solid #DEDEDE;
+	border-radius: 5px 5px 0 0;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 99%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(99%,#f7f7f7), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 99%,#ffffff 100%);
+	background: linear-gradient(top,  #ffffff 0%,#f7f7f7 99%,#ffffff 100%);
+	text-shadow: 0 1px 0 white;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.filter-icons{
+	width: 100px;
+	display: inline-block;
+	margin: 0 5px;
+	display: inline-block;
+}
+
+#filter-box a{
+	text-decoration: none;
+	vertical-align: top;
+	color: #666;
+	display: inline-block;
+	position: relative;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+#filter-box #active{
+	color: black !important;
+}
+
+#filter-box #active .retina-news-icon{
+	background-position: -121px -4px;
+}
+
+#filter-box #active .retina-ipad-icon{
+	background-position: -366px 2px;
+}
+
+#filter-box #active .retina-ios-icon{
+	background-position: -512px 2px;
+}
+
+#filter-box #active .retina-app-icon{
+	background-position: -645px 3px;
+}
+
+#filter-box #active .retina-trick-icon{
+	background-position: -945px 2px;
+}
+
+.filter-icons span{
+	background-image: url(http://macilove.com/resources/all-icons.png);
+	width: 65px;
+	height: 60px;
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+
+.filter-icons p{
+	margin-top: 3px;
+	line-height: 14px;
+}
+
+.retina-news-icon{
+	background-position: -121px -93px;
+}
+
+.retina-ipad-icon{
+	background-position: -366px -87px;
+}
+
+.retina-ios-icon{
+	background-position: -512px -87px;
+}
+
+.retina-app-icon{
+	background-position: -645px -86px;
+}
+
+.retina-trick-icon{
+	background-position: -944px -87px;
+}
+
+.retina-news-icon-a{
+	background-position: -121px -4px;
+}
+
+.retina-ipad-icon-a{
+	background-position: -366px 2px;
+}
+
+.retina-ios-icon-a{
+	background-position: -512px 2px;
+}
+
+.retina-app-icon-a{
+	background-position: -645px 3px;
+}
+
+.retina-trick-icon-a{
+	background-position: -945px 2px;
+}
+
+#content-box{
+	display: table;
+	padding-top: 60px;
+}
+
+#articles-row{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 696px;
+}
+
+aside{
+	vertical-align: top;
+	width: 244px;
+	display: inline-block;
+}
+
+aside a{
+	text-decoration: none;
+}
+
+/*
+aside a:hover{
+	color: #08c;
+}
+*/
+
+.post-box{
+	margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: 60px;
+	padding-left: 60px;
+	width: 540px;
+	margin-left: 5px;
+	text-align: left;
+}
+
+.index-news{
+	text-align: left;
+	width: 540px;
+	margin-left: 65px;
+	margin-bottom: 60px;
+}
+
+.index-news h2{
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.index-news h2 a{
+	color: black;
+	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	display: block;
+}
+
+.index-news h2 a:hover{
+	text-decoration: underline;
+}
+
+.index-news .toolbar{
+	color: #999;
+	font-size: 12px;
+	margin: 15px 0;
+}
+
+.index-news .clock{
+	margin-bottom: -4px;		
+	margin-right: 5px;
+	display: inline-block;
+	width: 16px;
+	height: 17px;
+	background-image: url(http://macilove.com/resources/all-icons.png);
+	background-repeat: no-repeat;
+	background-position: -18px -159px;
+}
+
+.post-box-label{
+	color: #97AC53 !important;
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 2px;
+}
+
+.post-box-label:hover{
+	border-bottom: 1px solid #d4e3a4;
+}
+
+.index-news .image, article .image{
+	margin-top: 10px;
+	margin-bottom: 22px;
+	padding: 5px;
+	background: white;
+	box-shadow: 0 1px 3px #cbcbcb;
+	text-align: center;
+	vertical-align: middle;
+	display:table-cell; 
+	border: 1px solid rgba(0,0,0,.17);
+}
+
+.image-box{
+	text-align: center;
+}
+
+article .image{
+	margin: 15px auto 25px auto;
+	display: inline-block;
+}
+
+.index-news .image img, article .image img{
+	float: left;
+}
+
+.index-news p{
+	font-size: 14px;
+	line-height: 140%;
+	width: 540px;
+	color: #444;
+	margin-bottom: 10px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.read-more-comments{	
+	border-radius: 30px;
+	text-decoration: none !important;
+	min-width: 80px;
+	padding: 3px 12px;
+	font-size: 12px;
+	line-height: normal !important;
+	background: #38adee;
+	background: -moz-linear-gradient(top, #38adee 0%, #2e75ce 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#38adee), color-stop(100%,#2e75ce));
+	background: -webkit-linear-gradient(top, #38adee 0%,#2e75ce 100%);
+	background: -o-linear-gradient(top, #38adee 0%,#2e75ce 100%);
+	background: linear-gradient(to bottom, #38adee 0%,#2e75ce 100%);
+	color: white !important;
+	text-shadow: 0 0 1px #195885;
+	box-shadow: 0 1px 0 #5EBFF3 inset, 0 -1px 0 #4B8DDD inset, 0 1px 0 #d3d4d4;
+	border: 1px solid #398dba;
+	border-bottom: 1px solid #2e5e9a;
+	text-align: center;
+}
+
+.read-more-comments:active{
+	box-shadow: 0 1px 6px rgba(0,0,0,0.3) inset;
+	color: #98D5F6 !important;
+}
+
+.pages-box{
+	width: 532px;
+	margin-left: 65px;
+	padding-top: 20px;
+	margin-bottom: 30px;
+	border-top: 1px solid #EDEDED;
+	text-align: left;
+	margin-top: -25px;
+}
+
+.page-number{
+	font-size: 13px;
+	color: #999;
+	line-height: 31px;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.page-buttons{
+	float: right;
+}
+
+.subscribe-news-box{
+	margin-left: 140px;
+	font-size: 16px;
+	font-family: Myriad Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: black;
+	margin-top: 22px;
+	line-height: 30px;
+	width: 660px;
+	text-align: left;
+}
+
+.prev-button{
+	padding-left: 10px;
+	padding-right: 25px;
+}
+
+.next-button{
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+.prev-button-comb{
+	border-radius: 4px 0 0 4px;
+	margin-right: -6px;
+}
+
+.next-button-comb{
+	border-radius: 0 4px 4px 0;
+}
+
+.page-button{
+	height: 32px;
+	line-height: 32px;
+	border-radius: 3px;
+	display: inline-block;
+	background: #ebebeb;
+	text-decoration: none;
+	color: #111 !important;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+	font-size: 14px;
+	background: #f3f3f3;
+	background: -moz-linear-gradient(top,  #f3f3f3 0%, #d7d7d7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#d7d7d7));
+	background: -webkit-linear-gradient(top,  #f3f3f3 0%,#d7d7d7 100%);
+	background: linear-gradient(top,  #f3f3f3 0%,#d7d7d7 100%);
+	box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.025) inset, 0 0 0 1px rgba(0,0,0,0.08) inset, 0 1px 0 #f0f0f0;
+}
+
+.next-p-arrow{
+	display: inline-block;
+	width: 10px;
+	height: 11px;
+	background-image: url(http://macilove.com/resources/all-icons.png);
+	background-repeat: no-repeat;
+	background-position: -1075px -28px;
+	margin-left: 10px;
+}
+
+.prev-p-arrow{
+	display: inline-block;
+	width: 10px;
+	height: 11px;
+	background-image: url(http://macilove.com/resources/all-icons.png);
+	background-repeat: no-repeat;
+	background-position: -1050px -28px;
+	margin-right: 10px;
+}
+
+.prev-button{
+	padding-left: 10px;
+	padding-right: 25px;
+}
+
+.next-button{
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+.page-button:active{
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.25) inset, 0 0 0 1px rgba(0,0,0,0.08) inset;
+	color: #777 !important;
+}
+
+.prev-button-comb{
+	border-radius: 3px 0 0 3px;
+	margin-right: -6px;
+}
+
+.next-button-comb{
+	border-radius: 0 3px 3px 0;
+}
+
+.disable{
+	display: none !important;
+}
+
+footer{
+	margin-bottom: 20px;
+	font-size: 11px;
+	color: #999;
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#made-on-mac{
+	padding-bottom: 40px;
+	padding-top: 35px;
+	position: relative;
+	text-align: center;
+}
+
+#made-on-a-mac-icon{	
+	display: inline-block;
+	width: 98px;
+	height: 36px;
+	background-image: url(http://macilove.com/resources/madeonamac.png);
+	background-repeat: no-repeat;
+}
+
+footer ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li{
+	display: inline-block;
+}
+
+footer a{
+	color: #999;
+}
+
+footer a:hover{
+	color: #08C;
+}
+
+footer .sep{
+	margin: 0px 5px;
+	color: #999;
+}
+
+footer .copy{
+	margin-right: 10px;
+}
+
+.later-sep-box{
+	margin-top: -15px;
+	margin-bottom: 40px;
+	width: 540px;
+	margin-left: 65px;
+	float: left;
+	clear: left;
+}
+
+.later-sep{
+	width: 530px;
+	font-size: 11px;
+	color: #999;
+	height: 14px;
+	background: white url(http://macilove.com/images/icons/later-sep.png) 50% 50%;
+	background-repeat: repeat-x;
+	display: block;
+	text-align: center;
+	float: left;
+}
+
+.later-sep span{
+	background: white;
+	display: inline;
+	padding: 0 8px;
+}
+
+aside section{
+	margin-bottom: 15px;
+	width: 244px;
+	background: whitesmoke;
+	padding: 20px 0 5px 0;
+	font-size: 12px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+	color: #333;
+	box-shadow: 0 1px 2px #CCC;
+	border-radius: 4px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#top-news-box{
+	padding-top: 0 !important;
+	background: -webkit-linear-gradient(top,#fcfcfc 0,hsl(0,0%,96%) 100%);
+	background: -moz-linear-gradient(top,#f7f7f7 0,#ededed 100%);
+}
+
+#top-news-box h3, #social-networks h3{
+	width: 224px;
+	margin-bottom: 10px;
+	margin-top: 0;
+	padding: 0;
+	height: 30px;
+	line-height: 32px;
+	padding-left: 20px;
+	font-size: 14px;
+	text-align: left;
+	font-weight: normal;
+	border-bottom:1px solid #E0E0E0;
+	background: #f7f7f7;
+	background: -moz-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#ededed));
+	background: -webkit-linear-gradient(top, #f7f7f7 0%,#ededed 100%);
+	background: linear-gradient(top, #f7f7f7 0%,#ededed 100%);
+}
+
+#social-networks{
+	padding: 0;
+}
+
+.top-news{
+	margin: 20px 0;
+}
+
+.top-news img{
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(25,25,25,0.3);
+}
+
+.top-news p{
+	padding: 0 20px;
+	margin: 10px 0 5px 0;
+}
+
+#top-news-box a{
+	color: #666;
+	text-decoration: none;
+}
+
+#top-news-box a:hover{
+	color: #08c;
+}
+
+#email-subscribe-toolbar{
+	border-top: 1px solid #ebebeb;
+	padding: 15px 0;
+	margin: 0 10px;
+}
+
+#email-subscribe-toolbar input{
+	width: 200px;
+	border: 1px solid #e3e3e3;
+	padding: 5px 3px;
+	outline: none;
+	border-top: 1px solid #dbdbdb;
+	box-shadow: 0 1px 0 #f2f2f2 inset;
+}
+
+#email-subscribe-toolbar input:focus{
+	box-shadow: 0 0 3px 1px #98c9fb;
+	border: #61abf7 solid 1px;
+}
+
+.social-icons-box .twitter, .social-icons-box .facebook{
+	display: inline-block;
+	vertical-align: top;	
+}
+
+.social-icons-box{
+	padding: 10px 0 15px 0;
+}
+
+.social-icons-box .twitter-icon{
+	display: inline-block;
+	vertical-align: top;
+	width: 60px;
+	height: 45px;
+	margin-bottom: 5px;
+	background-image: url(http://macilove.com/resources/social-icons.png);
+	background-repeat: no-repeat;
+	background-position: -92px -25px;
+}
+
+.social-icons-box .twitter:hover .twitter-icon{
+	background-position: -92px -90px;
+}
+
+.social-icons-box .facebook-icon{
+	display: inline-block;
+	vertical-align: top;
+	width: 60px;
+	height: 45px;
+	margin-bottom: 5px;
+	background-image: url(http://macilove.com/resources/social-icons.png);
+	background-repeat: no-repeat;
+	background-position: -11px -23px;
+}
+
+.social-icons-box .facebook:hover .facebook-icon{
+	background-position: -11px -88px;
+}
+
+.social-icons-box a{
+	color: #888;
+	margin: 0 10px;
+	font-size: 11px;
+}
+
+.social-icons-box a:hover{
+	color: black;
+}
+
+.social-icons-box .facebook{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.badge{
+	top: 0px;
+	font-size: 12px;
+	position: absolute;
+	text-align: center;
+	height: 17px;
+	line-height: 17px;
+	min-width: 10px;
+	border: 1px solid #a21019;
+	color: white !important;
+	text-shadow: 0 -1px 0 #8e1715;
+	padding: 0 4px;
+	display: block;
+	border-radius: 25px;
+	z-index: 2;
+	background: #dd1818;
+	background: -moz-linear-gradient(top, #ff5d5d 0%, #bc070d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff5d5d), color-stop(100%,#bc070d));
+	background: -webkit-linear-gradient(top, #ff5d5d 0%, #bc070d 100%);
+	background: linear-gradient(to bottom,  #ff5d5d 0%,#bc070d 100%);
+	box-shadow: 0 0 1px 1px rgba(255,28,26,.5) inset, 0 1px 1px rgba(255,186,125,.9) inset, 0 1px 3px rgba(155,101,112,.3), 0 -6px 0 rgba(184,0,9,.6) inset;
+}
+
+.news-icon-badge {
+	margin-left: 69px;
+}
+
+.ipad-icon-badge{
+	margin-left: 74px;
+}
+
+.ios-icon-badge{
+	margin-left: 64px;
+}
+
+.app-icon-badge{
+	margin-left: 64px;
+}
+
+.trick-icon-badge{
+	margin-left: 69px;
+}
+
+#articles-filter{
+	width: 980px;
+	text-align: center;
+	margin-left: -20px;
+	border-bottom: 1px solid white;
+	font-family: Lucida Grande, Lucida Sans Unicode, Tahoma, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	padding: 6px 0;
+	font-weight: bold;
+	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+	box-shadow: 0 1px 0 rgba(0,0,0,.05);
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f9f9f9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f9f9f9));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f9f9f9 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#f9f9f9 100%);
+}
+
+#articles-filter a{
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #666;
+	margin: 0;
+	border-radius: 30px;
+}
+
+#articles-filter a:hover{
+	background: rgba(0,0,0,.045);
+}
+
+#articles-filter #active{
+	background: rgba(0,0,0,.035);
+	color: black;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2) inset, 0 1px 0 rgba(255,255,255,.6);
+}
+
+.articles-filter-h1{
+	text-align: center;
+	font-size: 38px;
+	width: 100%;
+	font-weight: 200;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 40px 0 -10px 0;
+	color: black;	
+}
+
+article h1{
+	padding: 0 100px;
+	margin: 60px 0 0 0; 
+	color: #0f1b21;
+	letter-spacing: -1px;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;	
+	font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#description{
+	font-size: 14px;
+	line-height: 18px;
+	color: #799a2d;
+	width: 340px;
+	margin-top: 20px;
+	padding: 0 300px;
+	display: inline-block;
+}
+
+.time-box{
+	text-align: center;
+	border-top: 1px solid #F0F0F0;
+	margin-left: -20px;
+	margin-bottom: 25px;
+	margin-top: 30px;
+	width: 980px;
+}
+
+.time-box .date-box{
+	margin-bottom: -12px;
+	margin-top: -12px;
+	width: 980px;
+	text-align: center;
+}
+
+.time-box .source-links{
+	margin-bottom: -12px;
+	margin-top: -12px;
+	width: 980px;
+	text-align: center;
+	background: white;
+	margin-top: 5px;
+	margin: 0 auto;
+	padding: 0 12px;
+	color: #999;
+	font-size: 12px;
+}
+
+.time-box .date{
+	background: white;
+	margin-top: 5px;
+	margin: 0 auto;
+	padding: 0 12px;
+	color: #999;
+	font-size: 12px;
+}
+
+.time-box a{
+	border: none;
+	color: #999;
+}
+
+.time-box a:hover{
+	text-decoration: underline;
+	border: none;
+}
+
+article p{
+	display: inline-block;
+	font-size: 15px;
+	line-height: 140%;
+	color: #444;
+	margin: 0;
+	padding: 0 140px;
+	padding-bottom: 16px;
+}
+
+.source a{
+	color: #999;
+	font-size: 12px;
+	border-bottom: 1px solid #ebebeb;
+	text-decoration: none;
+}
+
+.source a:hover{
+	color: #08C !important;
+	border-bottom: 1px solid #42c0ff;
+}
+a, a:hover, .source a, .source a:hover, .read-m-box, .read-m-box:hover{
+	-webkit-transition: all ease-in-out .1s;
+}
+
+.post-toolbar-box{
+	text-align: center;
+	width: 980px;
+	border-top: 1px solid #ebebeb;
+	margin-left: -20px;
+	margin-bottom: 13px;
+	margin-top: 40px;
+}
+
+.post-toolbar-border{
+	margin-top: -13px;
+	width: 980px;
+	float: left;
+	clear: left;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.post-toolbar-box a{
+	display: inline-block;
+	margin: 0 2px;
+	background: white;
+	border: 1px solid #ebebeb;
+	padding: 3px 20px;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #333;
+	font-size: 13px;
+	min-width: 110px;
+}
+
+.post-toolbar-box a:hover{
+	background: #f2f2f2;
+	text-shadow: 0 1px 0 white;
+}
+
+.post-toolbar-border .active{
+	background: whitesmoke !important;
+	box-shadow: 0 1px 0px rgba(0,0,0,0.015) inset !important;
+	color: #999 !important;
+}
+
+#post-bottom-wrapper-readmore{
+	width: 940px;
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#post-bottom-wrapper-readmore a{
+	text-decoration: none;
+	color: black;
+}
+
+#post-bottom-wrapper-readmore a:hover{
+	text-decoration: none;
+	color: #08c;
+}
+
+#post-bottom-wrapper-readmore img{
+	width: 200px;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(25, 25, 25, 0.3);
+}
+
+.read-m-box{
+	width: 200px;
+	text-align: center;
+	display: inline-block;
+	font-size: 13px;
+	line-height: 16px;
+	margin: 40px 10px 10px 10px;
+	vertical-align: top;
+}
+
+.read-m-box p{
+	width: 200px;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.article-img{
+	margin: 0;
+	margin-bottom: 15px;
+	text-align: center;
+	width: 980px;
+	margin-left: -20px;
+}
+
+.article-img img{
+	display: inline-block;
+	max-width: 980px;
+}
+
+.article-img p{
+	font-size: 13px;
+	color: #666;
+	max-width: 660px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.subscribe-news-box{
+	background-color: #fafafa;
+	border-top: 1px solid #f5f5f5;
+	width: 980px;
+	margin-left: -20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 3px;
+	font-family: Myriad Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	text-shadow: 0 1px 0 rgba(255,255,255,.6);
+	color: #333;
+	margin-bottom: -10px;
+	border-radius: 0 0 5px 5px;
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #f4f4f4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#f4f4f4));
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#f4f4f4 100%);
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#f4f4f4 100%);
+}
+
+.subscribe-news-box-center{
+	display: inline-block;
+}
+
+#email-subscribe-article{
+	vertical-align: top;
+	margin-left: 10px;
+	font-size: 13px;
+	height: 24px;
+	border-right: none;
+	width: 195px !important;
+}
+
+.input{
+	width: 200px;
+	font-size: 14px;
+	margin-bottom: 7px;
+	border: 1px solid #D4D4D4;
+	height: 28px;
+	padding-left: 7px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.input:focus{
+	border: #61abf7 solid 1px;
+	outline: none;
+	outline-radius: 5px;
+	box-shadow: 0 0 3px 1px #98c9fb;
+	
+}
+
+.subcrb-email-button{
+	font-size: 12px;
+	margin-top: 0;
+	margin-left: -4px;
+	background: #049cdb;
+	background: -moz-linear-gradient(top,  #049cdb 0%, #0066cc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#049cdb), color-stop(100%,#0066cc));
+	background: -webkit-linear-gradient(top,  #049cdb 0%,#0066cc 100%);
+	background: linear-gradient(to bottom,  #049cdb 0%,#0066cc 100%);
+	color: white !important;
+	text-shadow: 0 -1px 0px #2075CB;
+	text-decoration: none;
+	padding: 5px 20px;
+	border-radius: 0 4px 4px 0;
+	line-height: 16px;
+	border: 1px solid #1973CC;
+	box-shadow: 0 1px 0px rgba(255, 255, 255, 0.2) inset;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.subcrb-email-button:active{
+	background: -webkit-linear-gradient(top, #56A1EB 0%,#358FE9 51%,#2375C7 99%,#559CE2 100%);
+	box-shadow: 0 0 5px rgba(0,0,0,.2) inset;
+	color: #BFDBF8 !important;
+}
+
+#latest-news-box{
+	width: 960px;
+	margin-bottom: 20px;
+	padding: 20px;
+	padding-top: 0px;
+	border-radius: 5px;
+	padding-right: 0;
+	font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial, sans-serif;
+	box-shadow: 0 1px 3px rgba(0,0,0,.15), 0 0 2px rgba(0,0,0,.4) inset;
+	background-image: url(http://macilove.com/resources/latest-news-bg.png);	
+	background-color: #9fb44d;
+	text-shadow: 0 1px 3px rgba(55,55,55,.2);
+}
+
+#latest-news-box a{
+	text-decoration: none;
+	border: none !important;
+	color: #374602;
+	-webkit-transition: all .15s;
+	display: block;
+}
+
+#latest-news-box a:hover{
+	color: white !important;
+	-webkit-transition: all .1s;
+}
+
+#latest-news-box li{
+	display: inline-block;
+	list-style-type: none;
+	width: 150px;
+	float: none;
+	vertical-align: top;
+	font-size: 12px;
+	line-height: 140%;
+	padding-right: 10px;
+}
+
+#latest-news-box ul{
+	margin: 0;
+	padding: 0;
+	width: 960px;
+	max-width: 960px;
+}
+
+#latest-news-box h4{
+	color: white;
+	padding-top: 4px;
+	margin-top: 0;
+	text-align: center;
+	padding-right: 20px;
+	font-size: 18px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#latest-news-box .date{
+	font-size: 11px;
+	color: #e2edba;	
+	padding-bottom: 7px;	
+}
+
+.plain_code{
+	width: 660px;
+	padding: 0 140px;
+}
+
+.plain_code p{
+	font-family: "Menlo Regular", Courier, monospace;
+	background-color: #FAF5E6;
+	padding: 3px 12px;
+	color: #735912;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 15px;
+	line-height: 140%;
+	max-width: 660px;
+	text-align: left;
+	border: 1px solid #F3E8C8;
+	border-radius: 2px;
+	word-wrap: break-word;
+	display: inline-block;
+/* 	box-shadow: 0 1px rgba(255,255,255,.5) inset; */
+}
+
+#screwdriver{
+	text-decoration: none;
+	color: #E6E6E6;
+	font-size: 12px;
+	position: absolute;
+	top: 125px;
+	right: 15px;
+	border: none;
+}
+
+#screwdriver:hover{
+	text-decoration: underline;
+	color: #08c;
+}
+
+article iframe{
+	margin: 0px auto 15px auto;
+	display: block;
+}
+
+article a{
+	color: #08c;
+	text-decoration: none;
+	border-bottom: 1px solid #d9ebff;
+}
+
+article a:hover{
+	border-bottom: 1px solid #08c;
+}
+
+article ul, article ol{
+	display: block;
+	margin: 0px auto 15px auto;
+	max-width: 660px;
+	font-size: 15px;
+	color: #444;
+	line-height: 140%;
+}
+
+article ul li{
+	list-style-type: circle;
+	padding-bottom: 5px;
+}
+
+article ol li{
+	list-style-type: decimal;
+	padding-bottom: 15px;
+}
+
+#comments-box{
+	padding-top: 15px;
+	width: 560px;
+	margin: 0 auto;
+}
+
+.yours a{
+	color: #06C;
+}
+
+.yours .bubble{
+	background: #acd356;
+	background: -moz-linear-gradient(top,  #acd356 0%, #b4df5b 88%, #d2dd5a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#acd356), color-stop(88%,#b4df5b), color-stop(100%,#d2dd5a));
+	background: -webkit-linear-gradient(top,  #acd356 0%,#b4df5b 88%,#d2dd5a 100%);
+	background: linear-gradient(to bottom,  #acd356 0%,#b4df5b 88%,#d2dd5a 100%);
+	box-shadow: 0 1px 2px #dcdcdc;
+	border: 1px solid #88b91c;
+	border-top: 1px solid #99d31c;
+	text-shadow: 0 1px 0 #CDED84;
+}
+
+.yours .bubble p{
+	color: #1F2A09;
+}
+
+.yours .gloss{
+	opacity: 0.8;
+	background: -moz-linear-gradient(top, rgba(232,249,194,1) 0%, rgba(232,249,194,0.22) 78%, rgba(232,249,194,0.01) 99%, rgba(232,249,194,0) 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,249,194,1)), color-stop(78%,rgba(232,249,194,0.22)), color-stop(99%,rgba(232,249,194,0.01)), color-stop(100%,rgba(232,249,194,0))) !important;
+	background: -webkit-linear-gradient(top,  rgba(232,249,194,1) 0%,rgba(232,249,194,0.22) 78%,rgba(232,249,194,0.01) 99%,rgba(232,249,194,0) 100%) !important;
+	background: linear-gradient(to bottom,  rgba(232,249,194,1) 0%,rgba(232,249,194,0.22) 78%,rgba(232,249,194,0.01) 99%,rgba(232,249,194,0) 100%) !important;
+}
+
+.yours .bubble:after{
+	background-position: -20px -29px !important;
+}
+
+.comment{
+	margin-bottom: 25px;
+}
+
+.comment:first-child{
+	margin-top: 15px;
+}
+
+.comment-by .date{
+	font-size: 11px;
+	color: #999;
+	font-weight: normal;
+}
+
+.comment-by{
+	display: inline-block;
+	width: 110px;
+	vertical-align: top;
+	margin-left: 15px;
+	font-size: 13px;
+	margin-top: 2px;
+	line-height: 140%;
+}
+
+.bubble p{
+	font-size: 13px;
+	line-height: 140%;
+	color: #333;
+	margin: 0;
+	padding-right: 10px;
+	z-index: 2;
+	white-space: pre-wrap;
+	position: relative;
+}
+
+.bubble:after{
+	content: "";
+	width: 13px;
+	height: 17px;
+	display: block;
+	background-image: url(http://macilove.com/resources/all-icons.png);
+	background-repeat: no-repeat;
+	background-position: -49px -29px;
+	position: absolute;
+	top: 5px;
+	right: -13px;
+}
+
+.bubble{
+	width: 400px;
+	color: #333;
+	padding: 5px 10px;
+	background: #ededed;
+	background: -moz-linear-gradient(top,  #ededed 0%, #fdfcfd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#fdfcfd));
+	background: -webkit-linear-gradient(top,  #ededed 0%,#fdfcfd 100%);
+	background: linear-gradient(to bottom,  #ededed 0%,#fdfcfd 100%);
+	box-shadow: 0 1px 2px #dcdcdc;
+	border: 1px solid #c0c0c0;
+	border-top: 1px solid #dbdbdb;
+	text-shadow: 0 1px 0 white;
+	position: relative;
+	border-radius: 7px;
+	word-wrap: break-word;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.bubble .gloss{
+	pointer-events: none;
+	height: 17px;
+	position: absolute;
+	left: 7px;
+	right: 7px;
+	top: 0px;
+	z-index: 1;
+	border-radius: 100%/590px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.3) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.8)), color-stop(100%,rgba(255,255,255,0.3)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.3) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.3) 100%);
+}
+
+/*
+
+.comment-text{
+	color: #333;
+	white-space: pre-wrap;
+}
+
+.comment-user{
+	padding-bottom: 10px;
+}
+
+.comment-date{
+	font-size: 12px;
+	color: #999;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.comment-by{
+	font-weight: bold;
+	display: inline-block;
+}
+*/
+
+#write-comment{
+	display: block;
+	margin: 0 auto;
+	font-size: 13px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+#write-comment .sep{
+	color: #ebebeb;
+	padding: 0 5px;
+}
+
+#write-comment #toolbar{
+	background: #F7F7F7;
+	padding: 10px;
+	text-align: right;
+	border-radius: 4px 4px 0 0;
+}
+
+#write-comment textarea{
+	width: 538px;
+	max-width: 538px;
+	padding: 10px;
+	height: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

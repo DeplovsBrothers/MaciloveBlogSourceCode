@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<link rel="stylesheet" type="text/css" href="http://macilove.com/news/style.css">
+<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://macilove.com/resources/jquery-2.1.0.min.js"></script>
+<title>Macilove</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!-- <meta name="apple-itunes-app" content="app-id= 732986215"> -->
+<!-- <meta name="viewport" content="width=1140" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="http://macilove.com/resources/favicon.ico" />
+
+<link rel="apple-touch-icon-precomposed" href="http://macilove.com/resources/apple-touch-icon-114x114.png">
+<link rel="alternate" type="application/rss+xml" href="http://macilove.com/rss/" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8052564-20']);
+  _gaq.push(['_trackPageview']);
+  
+  setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])", 15000);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<title></title>
+<meta property="og:title" content="Новости Apple для настоящих фанатов"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="https://pbs.twimg.com/profile_images/1903863734/metal.png"/>
+<meta property="og:description" content="Новости Apple, обзоры приложений, трюки и секреты для OS X и iOS" />
+<meta property="og:url" content="http://macilove.com/" />
+
+<link rel="alternate" type="application/rss+xml" href="http://macilove.com/rss/"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://macilove.com/resources/apple-touch-icon-114x114.png" />
+
+<script type="text/javascript">
+$(window).load(function() {
+
+	$(window).scroll(function(){
+	if ($(this).scrollTop() > 2000) {
+	$('#up-arrow').fadeIn();
+	} else {
+		$('#up-arrow').fadeOut();
+	}
+	});
+	
+	$('#up-arrow').click(function(){	
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+	return false;
+	});
+	
+	
+  /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+           
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},300);
+                    
+            }
+            
+        }); 
+    
+    });
+
+	var asideHeight = 40+$('aside').height() - $(window).height();
+	var flag = false;
+/*
+	console.log("h: "+(40+$('aside').height()));
+	console.log("ass: " +asideHeight);
+	console.log("br: "+$(window).height());//653
+*/
+	
+	$(window).scroll(function(){
+		
+		if(asideHeight <= $(window).scrollTop() && !flag)
+		{
+/* 			console.log($(window).scrollTop()); */
+
+			$('aside').css('position','fixed');
+			$('aside').css('bottom', '-10px');
+			
+			flag = true;
+		}	
+		else if(asideHeight > $(window).scrollTop() && flag)
+		{
+			$('aside').css('position','relative','bottom', '');
+			flag = false;
+		}
+	});	
+	
+	
+
+	//_roost.prompt();
+	
+});
+
+
+var showMorePage =2;
+var allow_autoload = 1;
+var scrolltrigger = 0.9;
+var category = "";
+
+$(window).scroll(function()
+{
+	
+	var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+
+
+	
+	
+	if(allow_autoload ==1)
+	if  ((wintop/(docheight-winheight)) > scrolltrigger) 
+	{
+	allow_autoload = 0;
+	    $('#spinner').toggle();
+		$.post(
+			'./indexMoreArticles.php',  
+	        {'showMore':1,'showMorePage':showMorePage,'showMoreColumn':1,'cat':category},  
+	        function(responseText){  
+		      
+		    	$('#news ul').append(responseText); 
+		      
+				showMorePage++;
+		      
+	        },  
+	        "html"  
+	        ).done(function() {
+	        allow_autoload = 1; 
+		        $('.spinner').toggle();
+		    });
+	        
+	}
+});
+</script>
+<script>
+    var _roost = _roost || [];
+    _roost.push(['appkey','4c81eda8d1c6482b80fc49459d4c2a33']);
+
+    !function(d,s,id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+            js=d.createElement(s); js.id=id;
+            js.src='//cdn.goroost.com/js/roost.js';
+            fjs.parentNode.insertBefore(js,fjs);
+        }
+    }(document, 'script', 'roost-js');
+
+
+</script>
+<style type="text/css">
+#fresh-reversi-banner{
+	width: 100%;
+	background: hsl(58, 100%, 51%);
+	border-bottom: 1px solid #ebebeb;
+	display: block;
+	color: #212417;
+	text-decoration: none;
+	font-family: "SF UI Display", "Helvetica Neue", Arial, sans-serif;
+	z-index: 100;
+	text-align: center;
+	line-height: 140%;
+	padding: 10px 0;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+#fresh-reversi-banner #grey{
+	color: #999;
+	display: none;
+}
+#revers-wrapper{
+	max-width: 980px;
+	text-align: left;
+	display: inline-block;
+}
+#fresh-reversi-banner h1{
+	font-size: 16px;
+	line-height: 140%;
+}
+#fresh-reversi-banner h2{
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 140%;
+}
+#fresh-reversi-banner h3{
+	font-size: 14px;
+	color: black;
+	line-height: 140%;
+}
+#fresh-icon{
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#fresh-title{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+</style>
+</head>
+<body>
+	
+<nav>
+	<div class="pin">
+		<a href="http://macilove.com" id="logo"></a>
+	<ul>
+		<li ><a href="http://macilove.com/news/apple-news/">Apple News</a></li>
+		<li ><a href="http://macilove.com/news/games-for-ios/">iOS Games</a></li>
+		<li ><a href="http://macilove.com/news/apps-for-ios/">iOS Apps</a></li>
+		<li ><a href="http://macilove.com/news/apps-and-games-for-mac-os-x/">Mac Apps</a></li>
+		<li ><a href="http://macilove.com/news/tricks-and-secrets-mac-os-x-ios/">Tricks & Secrets</a></li>
+	</ul>
+	<ul>
+		<li><a href="http://macilove.com/best-mac-os-x-apps/">Best Apps</a></li>
+		<li><a href="http://macilove.com/os-x-wallpapers/">Wallpapers</a></li>
+		<li><a href="http://macilove.com/books/">Books</a></li>
+	</ul>
+	<footer>
+		<ul>
+			<li>© 2015 Macilove.com</li>
+			<li><a href="http://macilove.com/about/">About Us</a></li>
+		</ul>
+	</footer>
+	<div id="up-arrow"></div>
+	</div>
+</nav>
+
+<article>
+	<section id="latest">
+		<a href="http://macilove.com/news/how-quickly-cancel-sending-imessage/"><img src="http://macilove.com/img/original/how-in-os-x-to-find-the-fastest-dns-for-your-network.jpg" width="560" height="290"></a><h1><a href="http://macilove.com/news/how-quickly-cancel-sending-imessage/">How to find the fastest DNS for your network</a></h1><div class="toolbar"><a href="http://macilove.com/news/secrets-iphone-ipad/" class="type">Tricks and secrets of the iPhone and iPad</a></span><span class="sep">|</span><span class="date">20.08.15 at 04:30 PM</span></div><p>With utility for OS X, you can optimize DNS servers and speed up your internet connection</p><a href="http://macilove.com/news/how-quickly-cancel-sending-imessage/" class="read-more">Read more</a>	</section>
+	<section class="yandex-index-flow ya-candy">
+<!-- Яндекс.Директ -->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(113966, "yandex_ad", {
+            stat_id: 1,
+            ad_format: "direct",
+            font_size: 0.9,
+            font_family: "arial",
+            type: "horizontal",
+            limit: 1,
+            title_font_size: 1,
+            links_underline: false,
+            site_bg_color: "FFFFFF",
+            title_color: "0000CC",
+            url_color: "5A7321",
+            text_color: "444444",
+            hover_color: "0088CC",
+            sitelinks_color: "0000CC",
+            no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+	</section>
+	<section id="news">
+		<ul>
+		<li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-mac-os-x/" class="type">Tricks and secrets of Mac OS X</a></span><span class="sep">|</span><span class="date">30.06.15 at 11:27 AM</span></div><h2><a href="http://macilove.com/news/hidden-directories-and-files-in-os-x-explained/">Hidden directories in OS X explained</a></h2><p>Description of the system folders and files, OS X, often hidden from the eyes of the user</p></div><a href="http://macilove.com/news/hidden-directories-and-files-in-os-x-explained/"><img src="http://macilove.com/img/thumbnails/hidden-directories-and-files-in-os-x-explained-m.jpg" width="200" height="140" alt="Значения системных директорий и скрытых файлов в OS X"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-mac-os-x/" class="type">Трюки и секреты Mac OS X</a></span><span class="sep">|</span><span class="date">22.06.15 в 13:08</span></div><h2><a href="http://macilove.com/news/how-to-reset-folders-view-options-in-os-x/">How to reset folders view in OS X</a></h2><p>There is a terminal command that resets the registration folder OS X</p></div><a href="http://macilove.com/news/how-to-reset-folders-view-options-in-os-x/"><img src="http://macilove.com/img/thumbnails/how-to-reset-folders-view-options-in-os-x-m.jpg" width="200" height="140" alt="Как сбросить настройки вида всех папок в OS X?"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-mac-os-x/" class="type">Трюки и секреты Mac OS X</a></span><span class="sep">|</span><span class="date"> 8.06.15 в 15:56</span></div><h2><a href="http://macilove.com/news/how-to-turn-video-shot-on-the-iphone/">How to rotate iPhone video</a></h2><p>With QuickTime you can rotate a video shot on an iPhone or iPad</p></div><a href="http://macilove.com/news/how-to-turn-video-shot-on-the-iphone/"><img src="http://macilove.com/img/thumbnails/how-to-turn-video-shot-on-the-iphone-m.jpg" width="200" height="140" alt="Как перевернуть видео снятое на iPhone"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-iphone-ipad/" class="type">Трюки и секреты iPhone и iPad</a></span><span class="sep">|</span><span class="date"> 3.06.15 в 19:50</span></div><h2><a href="http://macilove.com/news/how-to-get-a-refund-for-an-application-purchased-from-the-app-store/">How to refund on App Store</a></h2><p>This tutorial describes how you can return App Store purchases and get full refunds from Apple</p></div><a href="http://macilove.com/news/how-to-get-a-refund-for-an-application-purchased-from-the-app-store/"><img src="http://macilove.com/img/thumbnails/how-to-get-a-refund-for-an-application-purchased-from-the-app-store-m.jpg" width="200" height="140" alt="Как вернуть деньги за купленное приложение в App Store"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-mac-os-x/" class="type">Трюки и секреты Mac OS X</a></span><span class="sep">|</span><span class="date"> 2.06.15 в 15:21</span></div><h2><a href="http://macilove.com/news/how-to-simultaneously-open-all-the-folders-in-the-finder-in-list-mode/">How to simultaneously open all the folders in the Finder in list mode</a></h2><p>Special hotkey Finder open all folders in the list, including their</p></div><a href="http://macilove.com/news/how-to-simultaneously-open-all-the-folders-in-the-finder-in-list-mode/"><img src="http://macilove.com/img/thumbnails/how-to-simultaneously-open-all-the-folders-in-the-finder-in-list-mode-m.jpg" width="200" height="140" alt="Как одновременно открыть все папки в Finder в режиме списка"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-iphone-ipad/" class="type">Трюки и секреты iPhone и iPad</a></span><span class="sep">|</span><span class="date"> 1.06.15 в 14:03</span></div><h2><a href="http://macilove.com/news/how-to-store-an-infinite-number-of-pictures-from-the-iphone-to-the-cloud-for-free/">How to store an infinite number of pictures from the iPhone to the cloud for free</a></h2><p>Google Photos service offers unlimited amount of cloud service for storing photos and videos to your iPhone and iPad</p></div><a href="http://macilove.com/news/how-to-store-an-infinite-number-of-pictures-from-the-iphone-to-the-cloud-for-free/"><img src="http://macilove.com/img/thumbnails/how-to-store-an-infinite-number-of-pictures-from-the-iphone-to-the-cloud-for-free-m.jpg" width="200" height="140" alt="Как хранить бесконечное число фотографии с iPhone в облаке бесплатно"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-iphone-ipad/" class="type">Трюки и секреты iPhone и iPad</a></span><span class="sep">|</span><span class="date">31.05.15 в 21:14</span></div><h2><a href="http://macilove.com/news/how-to-create-an-airplay-speakers/">How to create AirPlay loudspeakers</a></h2><p>With AirPort Express, and external speakers, you can assemble your AirPlay system</p></div><a href="http://macilove.com/news/how-to-create-an-airplay-speakers/"><img src="http://macilove.com/img/thumbnails/how-to-create-an-airplay-speakers-m.jpg" width="200" height="140" alt="Как самому создать AirPlay колонки"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/apps-for-mac-os-x/" class="type">Приложения для Mac OS X</a></span><span class="sep">|</span><span class="date"> 2.04.15 в 13:42</span></div><h2><a href="http://macilove.com/news/gaget-widget-google-analytics-to-yosemite/">GAget — Google Analytics widget for Yosemite</a></h2><p>Developer widget GAget released an updated version for OS X Yosemite</p></div><a href="http://macilove.com/news/gaget-widget-google-analytics-to-yosemite/"><img src="http://macilove.com/img/thumbnails/gaget-widget-google-analytics-to-yosemite-m.jpg" width="200" height="140" alt="GAget — виджет Google аналитики для Yosemite"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/apps-for-mac-os-x/" class="type">Приложения для Mac OS X</a></span><span class="sep">|</span><span class="date">24.03.15 в 17:04</span></div><h2><a href="http://macilove.com/news/paste-application-to-store-clipboard-history-in-os-x/">Paste — application to store clipboard history in OS X</a></h2><p>Beautiful app for convenient operation from the clipboard history OS X, including text, pictures, videos, files, folders, and other formats</p></div><a href="http://macilove.com/news/paste-application-to-store-clipboard-history-in-os-x/"><img src="http://macilove.com/img/thumbnails/paste-application-to-store-clipboard-history-in-os-x-m.jpg" width="200" height="140" alt="Paste — приложение для хранения истории буфера обмена в OS X"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-iphone-ipad/" class="type">Трюки и секреты iPhone и iPad</a></span><span class="sep">|</span><span class="date">21.02.15 в 00:21</span></div><h2><a href="http://macilove.com/news/how-to-teach-your-iphone-better-recognize-fingerprints/">How to improve the iPhone to recognize fingerprints</a></h2><p>If Touch ID is not always successfully detects fingerprints, it is possible to further educate</p></div><a href="http://macilove.com/news/how-to-teach-your-iphone-better-recognize-fingerprints/"><img src="http://macilove.com/img/thumbnails/how-to-teach-your-iphone-better-recognize-fingerprints-m.jpg" width="200" height="140" alt="Как научить iPhone лучше распознавать отпечатки пальцев"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-mac-os-x/" class="type">Трюки и секреты Mac OS X</a></span><span class="sep">|</span><span class="date"> 9.02.15 в 13:34</span></div><h2><a href="http://macilove.com/news/how-to-force-youtube-to-open-video-in-1080p-hd-in-safari/">How to force open the YouTube video in 1080p HD in Safari</a></h2><p>With YouTube Center plug-in can be forced to include a YouTube video in 1080p HD</p></div><a href="http://macilove.com/news/how-to-force-youtube-to-open-video-in-1080p-hd-in-safari/"><img src="http://macilove.com/img/thumbnails/how-to-force-youtube-to-open-video-in-1080p-hd-in-safari-m.jpg" width="200" height="140" alt="Как заставить YouTube открывать видео в 1080p HD в Safari"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/apps-for-iphone/" class="type">Приложения для iPhone и iPad</a></span><span class="sep">|</span><span class="date"> 6.02.15 в 16:42</span></div><h2><a href="http://macilove.com/news/complete-set-of-tools-paper-applications-from-fiftythree-now-become-free/">A complete set of Paper tools for iPad now free</a></h2><p>Paper drawing application for iPad was completely free</p></div><a href="http://macilove.com/news/complete-set-of-tools-paper-applications-from-fiftythree-now-become-free/"><img src="http://macilove.com/img/thumbnails/complete-set-of-tools-paper-applications-from-fiftythree-now-become-free-m.jpg" width="200" height="140" alt="Полный набор инструментов Paper для iPad стал бесплатным"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-iphone-ipad/" class="type">Трюки и секреты iPhone и iPad</a></span><span class="sep">|</span><span class="date"> 5.02.15 в 17:41</span></div><h2><a href="http://macilove.com/news/how-to-clean-the-headphones-apple-earpods/">How to clean the EarPods headphones</a></h2><p>Using hydrogen peroxide and cotton swabs can be put in order mesh EarPods headphones</p></div><a href="http://macilove.com/news/how-to-clean-the-headphones-apple-earpods/"><img src="http://macilove.com/img/thumbnails/how-to-clean-the-headphones-apple-earpods-m.jpg" width="200" height="140" alt="Как почистить наушники Apple EarPods"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-mac-os-x/" class="type">Трюки и секреты Mac OS X</a></span><span class="sep">|</span><span class="date"> 4.01.15 в 00:49</span></div><h2><a href="http://macilove.com/news/how-in-os-x-to-find-the-fastest-dns-for-your-network/">How to find the fastest DNS for your network</a></h2><p>With utility for OS X, you can optimize DNS servers and speed up your Internet</p></div><a href="http://macilove.com/news/how-in-os-x-to-find-the-fastest-dns-for-your-network/"><img src="http://macilove.com/img/thumbnails/how-in-os-x-to-find-the-fastest-dns-for-your-network-m.jpg" width="200" height="140" alt="Как в OS X найти самый быстрый DNS для вашей сети"></a></li><li><div class="title"><div class="toolbar"><a href="http://macilove.com/news/secrets-mac-os-x/" class="type">Трюки и секреты Mac OS X</a></span><span class="sep">|</span><span class="date">24.12.14 в 18:58</span></div><h2><a href="http://macilove.com/news/how-to-use-youtype-see-the-active-keyboard-layout-in-os-x/">How to use YouType learn active layout in OS X</a></h2><p>The utility for OS X that displays the currently active layout next to the cursor</p></div><a href="http://macilove.com/news/how-to-use-youtype-see-the-active-keyboard-layout-in-os-x/"><img src="http://macilove.com/img/thumbnails/how-to-use-youtype-see-the-active-keyboard-layout-in-os-x-m.jpg" width="200" height="140" alt="Как с помощью утилиты YouType узнать активную раскладку в OS X"></a></li>		</ul>
+		
+		<div id="spinner">
+			<img src="http://macilove.com/resources/spinner.gif">
+		</div>
+	</section>
+</article>
+
+<aside>
+	<ul>
+		<li id="search">
+			<form method="get" action="http://www.google.com/search">
+			<input type="search" name="q" maxlength="255" placeholder="Search">
+			<input type="hidden" name="sitesearch" value="macilove.com" />
+			</form>
+		</li>
+		<li class="aside-1">
+			<h3>Popular Today</h3>
+			<li class="aside-1"><a href="http://macilove.com/news/how-to-turn-video-shot-on-the-iphone/"><img src="http://macilove.com/img/thumbnails/how-in-finder-turn-of-preview-window-l.jpg" width="260"></a><h4><a href="http://macilove.com/news/how-to-turn-video-shot-on-the-iphone/">How to enable preview window in Finder</a></h4></li><li class="aside-1"><a href="http://macilove.com/news/how-to-store-an-infinite-number-of-pictures-from-the-iphone-to-the-cloud-for-free/"><img src="http://macilove.com/img/thumbnails/smart-watches-withings-activite-fitness-tracker-premium-for-ios-l.jpg" width="260"></a><h4><a href="http://macilove.com/news/how-to-store-an-infinite-number-of-pictures-from-the-iphone-to-the-cloud-for-free/">Smart watches Withings Activité - premium fitness tracker  for iOS</a></h4></li><li class="aside-1"><a href="http://macilove.com/news/hidden-directories-and-files-in-os-x-explained/"><img src="http://macilove.com/img/thumbnails/how-to-increase-the-font-websites-in-safari-on-ipad-or-iphone-l.jpg" width="260"></a><h4><a href="http://macilove.com/news/hidden-directories-and-files-in-os-x-explained/">How to increase the font websites in Safari on the iPad</a></h4></li>		</li>
+	<li class="aside-1">
+	<!-- Яндекс.Директ -->
+<script type="text/javascript">
+yandex_partner_id = 113966;
+yandex_site_bg_color = 'FFFFFF';
+yandex_stat_id = 14;
+yandex_ad_format = 'direct';
+yandex_direct_type = 'posterVertical';
+yandex_direct_limit = 1;
+yandex_direct_title_font_size = 3;
+yandex_direct_links_underline = false;
+yandex_direct_title_color = '3C5160';
+yandex_direct_url_color = '006600';
+yandex_direct_text_color = '000000';
+yandex_direct_hover_color = '0066FF';
+yandex_direct_sitelinks_color = '5A7321';
+yandex_direct_favicon = false;
+yandex_no_sitelinks = false;
+document.write('<scr'+'ipt type="text/javascript" src="//an.yandex.ru/system/context.js"></scr'+'ipt>');
+</script>
+</li>
+
+		<li class="aside-text">
+			<h3>Popular this Week</h3>
+			<ul>
+				<li><h4><a href="http://macilove.com/news/how-quickly-cancel-sending-imessage/">How quickly cancel sending iMessage</a></h4></li><li><h4><a href="http://macilove.com/news/how-to-turn-video-shot-on-the-iphone/">How to rotate iPhone video</a></h4></li><li><h4><a href="http://macilove.com/news/hidden-directories-and-files-in-os-x-explained/">OS X hidden directories explained</a></h4></li><li><h4><a href="http://macilove.com/news/how-to-store-an-infinite-number-of-pictures-from-the-iphone-to-the-cloud-for-free/">How to store an infinite number of pictures from the iPhone to the cloud for free</a></h4></li><li><h4><a href="http://macilove.com/news/how-to-reset-folders-view-options-in-os-x/">How to reset folders view in OS X</a></h4></li> 
+			</ul>
+		</li>
+		<li class="aside-2">
+			<h3>Now Reading</h3>
+			<div><a href="http://macilove.com/news/how-to-format-a-usb-flash-drive-in-mac-os-x/"><img src="http://macilove.com/images/how-to-format-a-usb-flash-drive-in-mac-os-x-s.jpg" width="120" alt="Как отформатировать флешку в Mac OS X"></a><h4><a href="http://macilove.com/news/how-to-format-a-usb-flash-drive-in-mac-os-x/">How to format a flash drive in OS X</a></h4></div><div><a href="http://macilove.com/news/you-have-stolen-iphone-how-to-remotely-lock-it/"><img src="http://macilove.com/img/thumbnails/you-have-stolen-iphone-how-to-remotely-lock-it-s.jpg" width="120" alt="У вас украли iPhone? Как его удаленно заблокировать"></a><h4><a href="http://macilove.com/news/you-have-stolen-iphone-how-to-remotely-lock-it/">Your iPhone stolen? How to remotely lock it</a></h4></div>		</li>
+		<li class="aside-2">
+			<div><a href="http://macilove.com/news/how-to-connect-your-ipad-to-tv/"><img src="http://macilove.com/img/thumbnails/how-to-connect-your-ipad-to-tv-s.jpg" width="120" alt="Как подключить iPad к телевизору?"></a><h4><a href="http://macilove.com/news/how-to-connect-your-ipad-to-tv/">How to connect iPad to TV</a></h4></div><div><a href="http://macilove.com/news/what-is-the-other-space-and-how-to-free-space-on-the-iphone/"><img src="http://macilove.com/images/what-is-the-other-space-and-how-to-free-space-on-the-iphone-s.jpg" width="120" alt="Что такое «другое» пространство и как освободить свободное место в iPhone"></a><h4><a href="http://macilove.com/news/what-is-the-other-space-and-how-to-free-space-on-the-iphone/">What is "other" space in iPhone</a></h4></div>		</li>
+	</ul>
+</aside>
+
+</body>
+</html>
