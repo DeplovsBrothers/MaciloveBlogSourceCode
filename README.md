@@ -28,7 +28,7 @@ cons: you need to "decode" text from database to show the result html page.
 4. Configure Nginx server by following /Nginx server configuration files/macilove.com file.
 
 # How to write articles
-1. Open http://example.com/backdoor.php and enter your pass to install admin cookies.
+1. Open http://example.com/backdoor.php and enter your pass to install admin cookies. Withou it you can't open editor. Without such cookies editor will redirect you to index page.
 2. Open http://example.com/editor/ and enter test article. Article title and subtitle will be detected automatically. Don't forget to enter unique URL. New source not necessary.
 3. Drag and drop images direcly to the editor textfield.
 
