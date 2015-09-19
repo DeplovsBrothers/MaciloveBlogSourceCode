@@ -32,7 +32,7 @@ You need to check all filepathes.
 
 # How to write articles
 1. Open http://example.com/backdoor.php and enter your pass to install admin cookies. Withou it you can't open. editor. Without such cookies editor will redirect you to index page.
-2. Open http://example.com/editor/ and enter test article. Article title and subtitle will be detected automatically. Don't forget to enter unique URL. New source not necessary.
+2. Open http://example.com/editor/ and enter test article. Article title and subtitle will be detected automatically. Don't forget to enter unique URL. News "source" is optional.
 3. Drag and drop images direcly to the editor textfield.
 
 Article always have main "front" image you can see.
