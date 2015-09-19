@@ -10,15 +10,15 @@ Right now we'll focus on editor and content page. For information, macilove.com 
 where index is a list of all articles and content is one concrete article. 
 
 # What features editor have
-* Realtime preview
-* Autosave
-* Formatting tags (they was made like stackoverflow.com formating tags)
-* Drag'n'drop images to textarea to add them in your text (image will be load and when you save article will saved to image folder)
-* First row of textarea is a title of the article
+* Realtime preview.
+* Autosave.
+* Formatting tags (they was made like stackoverflow.com formating tags).
+* Drag'n'drop images to textarea to add them in your text (image will be load and when you save article will saved to image folder).
+* First row of textarea is a title of the article.
 * Second row is subtitle.
 
 Text saved with tags to database 
-pros: you have flexebility to change css/html as you want for every format element in the saved text 
+pros: you have flexebility to change css/html as you want for every format element in the saved text. 
 cons: you need to "decode" text from database to show the result html page.
 
 
@@ -31,18 +31,18 @@ cons: you need to "decode" text from database to show the result html page.
 You need to check all filepathes.
 
 # How to write articles
-1. Open http://example.com/backdoor.php and enter your pass to install admin cookies. Withou it you can't open editor. Without such cookies editor will redirect you to index page.
+1. Open http://example.com/backdoor.php and enter your pass to install admin cookies. Withou it you can't open. editor. Without such cookies editor will redirect you to index page.
 2. Open http://example.com/editor/ and enter test article. Article title and subtitle will be detected automatically. Don't forget to enter unique URL. New source not necessary.
 3. Drag and drop images direcly to the editor textfield.
 
-Article always have main "front" image you can see  
+Article always have main "front" image you can see.
 
 When you done, save your text (Save button). And when you ready to publish new article push publish button.
 From this moment article will be available in the index / content file. 
 
 # Index and content files
-index.php in root folder
-content.php in the news folder
+index.php in root folder.
+content.php in the news folder.
 
 Index is a list of all articles (first screenshot). You can use it as is, or you can delete all code that related to "old" database.
 You also need to add your database name and ect. 
