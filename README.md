@@ -9,7 +9,7 @@ Note: files that we provide have much more functions that described it all been 
 Right now we'll focus on editor and content page. For information, macilove.com have this hierarchy: index / content
 where index is a list of all articles and content is one concrete article. 
 
-# What features editor have
+# Editor features
 * Realtime preview.
 * Autosave.
 * Formatting tags (they was made like stackoverflow.com formating tags).
