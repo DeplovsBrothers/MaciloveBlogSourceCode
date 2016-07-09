@@ -1,7 +1,8 @@
 # MaciloveBlogSourceCode
 
-Source code of our own blog platform <a href="http://macilove.com" target="_blank">macilove.com</a>, written in PHP, hosted on Nginx server. MIT License.
-<img src="http://pleeq.com/github/macilove.jpg">
+Source code of our own blog platform <a href="http://macilove.com" target="_blank">macilove.com</a>, written in PHP, hosted on Nginx server. MIT License.<br/>
+<img src="http://pleeq.com/github/macilove.jpg"><br/>
+
 For any other information contact us at <a href="http://pleeq.com" target="_blank">pleeq.com</a>
 
 Note: files that we provide have much more functions that described it all been used in our macilove.com, but right now we haven't time to describe them all. Maybe in the future we'll add more commentaries. 
