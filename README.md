@@ -1,7 +1,7 @@
 # MaciloveBlogSourceCode
 
 Source code of our own blog platform <a href="http://macilove.com" target="_blank">macilove.com</a>, written in PHP, hosted on Nginx server. MIT License.<br/>
-<img src="http://pleeq.com/github/macilove.jpg"><br/>
+<img src="https://macilove.com/img/macilove.jpg"><br/>
 
 For any other information contact us at <a href="http://pleeq.com" target="_blank">pleeq.com</a>
 
